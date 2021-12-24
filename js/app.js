@@ -31,9 +31,42 @@
         $scope.menu1                = false;
         $scope.menu2              = false;
         $scope.menu3              = false;
+        $scope.homeSlide1           = true;
+        $scope.homeSlide2           = false;
+        $scope.homeSlide3          = false;
         $scope.audio                = new Audio('../audio/nav.wav')
         $scope.bgaudio              = new Audio('../images/web.wav')
   
+        $scope.openHomeSlider1 = function(){
+            console.log("clicked")
+
+            if(!$scope.homeSlide1){
+                $scope.homeSlide1 = true;
+                $scope.homeSlide2 = false;
+                $scope.homeSlide3 = false;
+            }
+
+        }
+        $scope.openHomeSlider2 = function(){
+            console.log("clicked")
+        
+            if(!$scope.homeSlide2){
+                $scope.homeSlide2 = true;
+                $scope.homeSlide1 = false;
+                $scope.homeSlide3 = false;
+            }
+
+        }
+        
+        $scope.openHomeSlider3 = function(){
+            console.log("clicked")
+            if(!$scope.homeSlide3){
+                $scope.homeSlide3 = true;
+                $scope.homeSlide2 = false;
+                $scope.homeSlide1 = false;
+            }
+
+        }
         $scope.openShopPage = function(){
 
            // $scope.bgaudio.play()
@@ -147,6 +180,42 @@
                     $scope.menu2 = false;
                     $scope.menu3 = false;
         }
+        $scope.goToSecondDiv= function(){
+
+            console.log("clicked")
+           $('html, body').animate({
+               scrollTop: $("#secondDiv").offset().top
+           }, 1000);
+           $scope.menuOpen = false;
+           $scope.menuListClosed = true;
+                   $scope.menu1 = false;
+                   $scope.menu2 = false;
+                   $scope.menu3 = false;
+       }
+       $scope.goToThirdDiv= function(){
+
+        console.log("clicked")
+       $('html, body').animate({
+           scrollTop: $("#thirdDiv").offset().top
+       }, 1000);
+       $scope.menuOpen = false;
+       $scope.menuListClosed = true;
+               $scope.menu1 = false;
+               $scope.menu2 = false;
+               $scope.menu3 = false;
+   }
+   $scope.goToFourthDiv= function(){
+    console.log("clicked")
+       $('html, body').animate({
+           scrollTop: $("#fourthDiv").offset().top
+       }, 1000);
+       $scope.menuOpen = false;
+       $scope.menuListClosed = true;
+               $scope.menu1 = false;
+               $scope.menu2 = false;
+               $scope.menu3 = false;
+
+   }
         $scope.goToNftPage = function(){
 
             $('html, body').animate({
