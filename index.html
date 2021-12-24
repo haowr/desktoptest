@@ -195,7 +195,15 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	50% { opacity: .1; } 
 	100% { opacity: 1; }
 }
-
+video {  
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 </style>
 <div class="navbar-fixed black" style="height:80px; box-shadow:4px solid black; background-image:url('./bckrndblur.png')">
   <nav class=" " style="  background-image:url('./bckrndblur.png')">
@@ -252,7 +260,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 
 </div>-->
-<body class="show-on-medium-and-up" style="background-image:url('./backdrounded.gif')">
+<body  style="background-image:url('./backdrounded.gif');background-repeat:no-repeat;background-size:cover;
+background-position:center;">
   
 
 
