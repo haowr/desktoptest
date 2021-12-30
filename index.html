@@ -204,6 +204,14 @@ video {
   left: 0;
   z-index: -1;
 }
+
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 </style>
 <div class="navbar-fixed black" style="height:80px; box-shadow:4px solid black; background-image:url('./bckrndblur.png')">
   <nav class=" " style="  background-image:url('./bckrndblur.png')">
@@ -275,27 +283,50 @@ video {
 		<div class="col s8">
 			<div class="row">
 	
+			
+				
+			
+				<div class="col s6 center-align" style="">
+	
+	
+				</div>
+			
 				<div class="col s6">
 					<div class="row">
-					<div class="col s4">
+					<div class="col s6">
 	
-					<div ng-if="homeSlide1">
-	
-						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">BEANS META?</h1>
+					<div ng-if="homeSlide1" class="center-align">
+	<br>
+
+						<h2 class="animated fadeInLeft white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h2>
+						<h2 class="animated fadeInRight white-text" style="font-family:'Oswald';">BEANS META?</h2>
+						<div class="col s12" style="border:2px solid white;"></div>
 						<br>
-						<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-						<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+						<h4 class="white-text animated flash "style="font-family:'Oswald';">Watch The Trailer!</h4>
+						<a class="waves-effect waves-light red btn black-font"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
 	
 					</div>
 	
 					<div ng-if="homeSlide2">
 	
-						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">BEANS META?</h1>
-						<br>
-						<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-						<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+				
+							<h2 class="white-text" style="font-family:'Oswald' !important;">Join The Crew</h2>
+							<h5 class="animated    white-text" style="font-family:'Oswald' !important;">Play For A Spot On The Whitelist!</h5>
+							<div class="col s12" style="border:2px solid white;"></div>
+							<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium.
+
+		<div class="row">
+			<div class="col s6">
+				<img class="responsive-img"  src='./gps.svg'>
+			</div>
+			<div class="col s6">
+				<img class="responsive-img"  src='./appstore.svg'>
+
+			</div>
+		</div>
+								
+
+						
 	
 					</div>
 	
@@ -314,15 +345,13 @@ video {
 	
 	
 				 
-								<div class="col s4">
+								<div class="col s6 center-align">
 									<i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
 								</div>
-								<div class="col s4">
+								<div class="col s6 center-align">
 									<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
 								</div>
-								<div class="col s4">
-									<i ng-click="openHomeSlider3()" class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
-								</div>
+							
 							
 						
 							
@@ -353,18 +382,10 @@ video {
 					<div class="col s6">
 					</div>
 				
-	<div class="col s2" style=""></div>
+	
 					</div>
 	
 				</div>
-				
-			
-				<div class="col s6 center-align" style="">
-	
-	
-				</div>
-			
-				
 	
 				
 					  
@@ -386,25 +407,23 @@ video {
 	
 	
 
-	<div class="row"  style="background-image:url('./contactcloser.jpeg');background-repeat:no-repeat;background-size:cover;
+	<div class="row"  style="background-image:url('./charactervid.gif');background-repeat:no-repeat;background-size:cover;
 	background-position:center;">
+
 		<div class="col s2"></div>
+
 		<div class="col s8">
+
 			<div class="row">
-	
-	
 			
 				<div class="col s6">
+
 					<div class="row">
 				
-	<!---
-					<div class="col s6">
-						<img src="./1.png" style="height:50px; width:50px;" class="img-responsive animated fadeIn">				
-					</div>-->
 				
 	<div class="col s12">
 	
-		<div ng-if="homeSlide1">
+		<div ng-if="homeSlide1o">
 
 			<h1 class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
 			<h1 class="animated  white-text" style="font-family:'Oswald';">THE LITTLE DEMON</h1>
@@ -414,33 +433,36 @@ video {
 			<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
 			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. In varius augue ut sagittis euismod. Proin malesuada lacus elementum porta viverra. Mauris vestibulum tincidunt lectus eu dapibus.
 
-			 nunc ac consectetur venenatis, est justo maximus justo, sed sagittis lorem orci non sapien. Curabitur finibus, ligula nec bibendum sagittis, tellus augue pulvinar augue, ac bibendum massa mi et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec interdum lacus, ut eleifend metus. Nullam sed nibh in nulla rhoncus egestas at vitae nisl. Aliquam vestibulum justo enim, eget sollicitudin metus vulputate in.</p>
+			 </p>
 		</div>
 
-		<div ng-if="homeSlide2">
+		<div ng-if="homeSlide2o">
 
-			<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-			<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">BEANS META?</h1>
-			<br>
-			<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-			<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. In varius augue ut sagittis euismod. Proin malesuada lacus elementum porta viverra. Mauris vestibulum tincidunt lectus eu dapibus.
-
-				Etiam at enim venenatis, eleifend ligula ac, facilisis lectus. Aenean eu scelerisque eros. Aenean tristique, nunc ac consectetur venenatis, est justo maximus justo, sed sagittis lorem orci non sapien. Curabitur finibus, ligula nec bibendum sagittis, tellus augue pulvinar augue, ac bibendum massa mi et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec interdum lacus, ut eleifend metus. Nullam sed nibh in nulla rhoncus egestas at vitae nisl. Aliquam vestibulum justo enim, eget sollicitudin metus vulputate in.</p>
-		</div>
-
-		<div ng-if="homeSlide3">
-
-			<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-			<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">BEANS META?</h1>
+			<h1 class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
+			<h1 class="animated  white-text" style="font-family:'Oswald';">THE LITTLE DEMON</h1>
 			<div class="col s12" style="border:2px solid white;"></div>
 			<br>
 			<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-			<a class="waves-effect waves-light btn animated flash infinite" ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+			<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
 			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. In varius augue ut sagittis euismod. Proin malesuada lacus elementum porta viverra. Mauris vestibulum tincidunt lectus eu dapibus.
 
-				Curabitur finibus, ligula nec bibendum sagittis, tellus augue pulvinar augue, ac bibendum massa mi et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec interdum lacus, ut eleifend metus. Nullam sed nibh in nulla rhoncus egestas at vitae nisl. Aliquam vestibulum justo enim, eget sollicitudin metus vulputate in.</p>
-		</div>
+			 </p>
+		
+			</div>
+
+		<div ng-if="homeSlide3o">
+
+			<h1 class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
+			<h1 class="animated  white-text" style="font-family:'Oswald';">THE LITTLE DEMON</h1>
+			<div class="col s12" style="border:2px solid white;"></div>
+			<br>
+			<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
+			<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. In varius augue ut sagittis euismod. Proin malesuada lacus elementum porta viverra. Mauris vestibulum tincidunt lectus eu dapibus.
+
+			 </p>
+		
+			</div>
 
 			<div class="row"></div>
 			<div class="row" style="">
@@ -487,7 +509,7 @@ video {
 				</div>
 				
 				
-				<div ng-if="homeSlide1" class="col s6 animated fadeIn" style="" >
+				<div ng-if="homeSlide1o" class="col s6 animated fadeIn" style=" border:2px solid white;" >
 					<br>
 					<br></br>
 					<br>
@@ -495,7 +517,7 @@ video {
 					<br>
 					<img src="./zz.png" class="responsive-img">
 				</div>
-				<div ng-if="homeSlide2" class="col s6 animated fadeIn" >
+				<div ng-if="homeSlide2o" class="col s6 animated fadeIn" >
 					<br>
 					<br></br>
 					<br>
@@ -503,7 +525,7 @@ video {
 					<br>
 					<img src="./steel.png" class="responsive-img">
 				</div>
-				<div ng-if="homeSlide3" class="col s6 animated fadeIn" >
+				<div ng-if="homeSlide3o" class="col s6 animated fadeIn" >
 					<br>
 					<br></br>
 					<br>
@@ -529,135 +551,14 @@ video {
 
 
 			
-<div id="secondDiv" style="border:5px solid transparent;">
 
-	<div class='row'></div>
-	<div class='row'></div>
-
-	<div class='row'></div>
-	<div class='row'></div>
-	<div class='row'></div>
-	<div class='row'></div>
-
-	
-
-	<div class="row" style="background-image:url('./contactcloser.gif');background-repeat:no-repeat;background-size:cover;
-	background-position:center;">
-		<div class="col s2"></div>
-	
-		<div class="col s8">
-			<div class="row">
-	
-	
-				
-				<div class="col s6">
-					<div class="row">
-					<div class="col s4">
-	
-					<div ng-if="homeSlide1">
-	
-						<h1 class="animated slideInRight white-text" style="font-family:'Oswald'; color:transparent;">CAN YOU ESCAPE?</h1>
-						<h1 class="animated slideInRight white-text" style="font-family:'Oswald';">BEANS META?</h1>
-						<br>
-						<h4 class="white-text animated flash "style="font-family:'Oswald';color:transparent;">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-						<a class="waves-effect waves-light btn"><i class="material-icons right" style="color:transparent;">chevron_right</i>SIGN-UP!</a>
-	
-					</div>
-	
-					<div ng-if="homeSlide2">
-	
-						<h1 class="animated slideInDown white-text" style="font-family:'Oswald';color:transparent;">CAN YOU ESCAPE?</h1>
-						<h1 class="animated slideInDown white-text" style="font-family:'Oswald';color:transparent;">BEANS META?</h1>
-						<br>
-						<h4 class="white-text animated flash "style="font-family:'Oswald';color:transparent;">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-						<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-	
-					</div>
-	
-					<div ng-if="homeSlide3">
-	
-						<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';color:transparent;">CAN YOU ESCAPE?</h1>
-						<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';color:transparent;">BEANS META?</h1>
-						<br>
-						<h4 class="white-text animated flash "style="font-family:'Oswald';color:transparent;">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-						<a class="waves-effect waves-light btn" ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-	
-					</div>
-	
-						<div class="row"></div>
-						<div class="row">
-	
-	
-				 
-								<div class="col s4">
-									<i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
-								</div>
-								<div class="col s4">
-									<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
-								</div>
-								<div class="col s4">
-									<i ng-click="openHomeSlider3()" class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
-								</div>
-							
-						
-							
-				
-							
-								  
-						</div>
-						<div class="row">
-	
-	
-				 
-							<div class="col s4">
-							</div>
-							<div class="col s4">
-								<i ng-click="goToFourthDiv()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>
-							</div>
-							<div class="col s4">
-							</div>
-						
-					
-						
-			
-						
-							  
-					</div>
-					</div>
-	
-					<div class="col s6">
-				
-					</div>
-				
-	<div class="col s2" style=""></div>
-					</div>
-	
-				</div>
-				<div class="col s6" style="">
-		
-	
-				</div>
-			
-				
-	
-				
-					  
-			</div>
-		</div>
-			<div class="col s2">
-	
-			</div>
-	
-		</div>
-	
-</div>
 		
 			
 <div id="fourthDiv" style="border:5px solid transparent;" >
 
-	
 
-	<div class="row"  style=" background-image: url('./contactvid.gif'); background-size:cover;">
+
+	<div class="row"  style=" background-image:url('./contactvid.gif'); background-size: cover;">
 		<div class="col s2"></div>
 		<div class="col s8">
 			<div class="row">
@@ -668,7 +569,7 @@ video {
 	
 	<div class="col s12">
 	
-		<div ng-if="homeSlide1">
+		<div ng-if="homeSlide1o">
 
 			<h1 class="animated slideInRight white-text" style="font-family:'Oswald';">CONTACT US!</h1>
 			<h1 class="animated slideInRight white-text" style="font-family:'Oswald';">BEANS META?</h1>
@@ -678,7 +579,7 @@ video {
 
 		</div>
 
-		<div ng-if="homeSlide2">
+		<div ng-if="homeSlide2o">
 
 			<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
 			<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">BEANS META?</h1>
@@ -688,7 +589,7 @@ video {
 
 		</div>
 
-		<div ng-if="homeSlide3">
+		<div ng-if="homeSlide3o">
 
 			<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
 			<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">BEANS META?</h1>
@@ -721,16 +622,16 @@ video {
 			</div>
 			<div class="row">
 
-				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. In varius augue ut sagittis euismod. Proin malesuada lacus elementum porta viverra. Mauris vestibulum tincidunt lectus eu dapibus.
+				<p class="white-text animated fadeIn flow-text" style=" font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. 
 
-					Curabitur finibus, ligula nec bibendum sagittis, tellus augue pulvinar augue, ac bibendum massa mi et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec interdum lacus, ut eleifend metus. Nullam sed nibh in nulla rhoncus egestas at vitae nisl. Aliquam vestibulum justo enim, eget sollicitudin metus vulputate in.</p>
+					</p>
 			</div>
 	
 	 
 				<div class="col s4">
 				</div>
 				<div class="col s4 center-align">
-					<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>
+					<!--<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>-->
 				</div>
 				<div class="col s4">
 				</div>
