@@ -35,8 +35,41 @@
         $scope.homeSlide2           = false;
         $scope.homeSlide3          = false;
         $scope.audio                = new Audio('../audio/nav.wav')
-        $scope.bgaudio              = new Audio('../images/web.wav')
-  
+        $scope.bgaudio              = new Audio('../images/web.wav'
+        )
+        $scope.characterSlider1 = true;
+        $scope.chararcterSlider2 = false;
+        $scope.characterSlider3 = false;
+        $scope.openCharacterSlider1 = function(){
+            console.log("clicked")
+
+            if(!$scope.characterSlider1){
+                $scope.characterSlider1 = true;
+                $scope.characterSlider2 = false;
+                $scope.characterSlider3 = false;
+            }
+
+        }
+        $scope.openCharacterSlider2 = function(){
+            console.log("clicked")
+
+            if(!$scope.chararcterSlider2){
+                $scope.characterSlider2 = true;
+                $scope.characterSlider1 = false;
+                $scope.characterSlider3 = false;
+            }
+
+        }
+        $scope.openCharacterSlider3 = function(){
+            console.log("clicked")
+
+            if(!$scope.characterSlider3){
+                $scope.characterSlider3 = true;
+                $scope.characterSlider2 = false;
+                $scope.characterSlider1 = false;
+            }
+
+        }
         $scope.openHomeSlider1 = function(){
             console.log("clicked")
 
