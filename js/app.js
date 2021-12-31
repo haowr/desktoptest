@@ -70,6 +70,46 @@
             }
 
         }
+        $scope.infoSlider1 = true;
+        $scope.infoSlider2 = false;
+        $scope.openInfoSlider1 = function(){
+            console.log("clicked")
+
+            if(!$scope.infoSlider1){
+                $scope.infoSlider1 = true;
+                $scope.infoSlider2 = false;
+            }
+
+        }
+        $scope.openInfoSlider2 = function(){
+            console.log("clicked")
+
+            if(!$scope.infoSlider2){
+                $scope.infoSlider2 = true;
+                $scope.infoSlider1 = false;
+            }
+
+        }
+        $scope.openCharacterSlider3 = function(){
+            console.log("clicked")
+
+            if(!$scope.characterSlider3){
+                $scope.characterSlider3 = true;
+                $scope.characterSlider2 = false;
+                $scope.characterSlider1 = false;
+            }
+
+        }
+        $scope.openCharacterSlider3 = function(){
+            console.log("clicked")
+
+            if(!$scope.characterSlider3){
+                $scope.characterSlider3 = true;
+                $scope.characterSlider2 = false;
+                $scope.characterSlider1 = false;
+            }
+
+        }
         $scope.openHomeSlider1 = function(){
             console.log("clicked")
 
