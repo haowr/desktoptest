@@ -333,7 +333,7 @@
                     $scope.menu3 = false;
 
         }
-        $scope.clickTest()
+     //   $scope.clickTest()
         $scope.openContactPage     = function(){
 
                 if(!$scope.contactPageOpen){
