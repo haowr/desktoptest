@@ -280,7 +280,7 @@
    $scope.goToFourthDiv= function(){
     console.log("clicked")
        $('html, body').animate({
-           scrollTop: $("#fourthDiv").offset().top
+           scrollTop: $("#thirdDiv").offset().top
        }, 1000);
        $scope.menuOpen = false;
        $scope.menuListClosed = true;
@@ -302,7 +302,7 @@
         }
         $scope.goToContactPage = function(){
  $('html, body').animate({
-                scrollTop: $("#contact").offset().top
+                scrollTop: $("#contactpage").offset().top
             }, 1000); 
                   $scope.menuOpen = false;
             $scope.menuListClosed = true;
@@ -313,7 +313,7 @@
         }
                $scope.openInfoPage = function(){
  $('html, body').animate({
-                scrollTop: $("#infopage").offset().top
+                scrollTop: $("#firstDiv").offset().top
             }, 1000); 
                   $scope.menuOpen = false;
             $scope.menuListClosed = true;
@@ -324,8 +324,8 @@
         }
           $scope.goToHome = function(){
  $('html, body').animate({
-                scrollTop: $("#firstDiv").offset().top
-            }, 1000); 
+                scrollTop: $("#goToHome").offset().top-100 
+            },500); 
                   $scope.menuOpen = false;
             $scope.menuListClosed = true;
                     $scope.menu1 = false;
@@ -333,6 +333,8 @@
                     $scope.menu3 = false;
 
         }
+        
+      $scope.goToHome()
      //   $scope.clickTest()
         $scope.openContactPage     = function(){
 

@@ -208,13 +208,19 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
   <nav class=" " style="  background-image:url('./bckrndblur.png')">
     <div class="">
 		<!--<a href="#" class="brand-logo left">Logo</a>-->
-      <img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" />
+		<a href="#" ng-click="goToHome()">  <img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" /></a>
 
-   
-      <ul class="right" ng-click="openMenu()">
+	  <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a ng-click="goToHome()"  style="font-family:'Oswald'; font-size:20px;"href="#" >HOME</a></li>
+        <li><a ng-click="clickTest()"  style="font-family:'Oswald'; font-size:20px;"href="#" >INFO</a></li>
+        <li><a ng-click="goToFourthDiv()"  style="font-family:'Oswald'; font-size:20px;"href="#" >CHARACTERS</a></li>
+		<li><a ng-click="goToNftPage()"  style="font-family:'Oswald'; font-size:20px;"href="#" >NFT</li>
+
+      </ul>
+     <!--- <ul class="right" ng-click="openMenu()">
       
         <li><i class="material-icons right" style="font-size:60px; " ng-class="{'openmenu':menuOpen,'menuclose':!menuOpen}">dehaze</i></li>
-      </ul>
+      </ul>-->
     </div>
   </nav>
 </div>
@@ -263,7 +269,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
   
 
 
-	<div class="row" style="background-image:url('./newback.gif');background-repeat:no-repeat;background-size:cover;
+	<div id="goToHome" class="row" style="background-image:url('./newback.gif');background-repeat:no-repeat;background-size:cover;
 	background-position:center;">
 	<div class="col s2"></div>
 
@@ -294,8 +300,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						<div class="col s12" style="border:2px solid white;"></div>
 						<br>
 						<h4 class="white-text animated flash "style="font-family:'Oswald';">Watch The Trailer!</h4>
-						<a class="waves-effect waves-light red btn black-font"><i class="material-icons right">chevron_right</i>WATCH!</a>
-	
+						<a href="https://www.youtube.com/watch?v=cPR6_4RJSJk" target="_blank"class="waves-effect waves-light red btn black-font"><i class="material-icons right">chevron_right</i>WATCH!</a>
+						<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+
 					</div>
 	
 					<div ng-if="homeSlide2">
@@ -308,10 +315,10 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 		<div class="row">
 			<div class="col s6">
-				<img class="responsive-img" style="width:200px; height:80px;" src='./gps.svg'>
+				<a href="https://apps.apple.com/ca/app/big-beans-player-2/id1599886852" target="_blank"><img class="responsive-img" style="width:200px; height:80px;" src='./gps.svg'></a>
 			</div>
 			<div class="col s6">
-				<img class="responsive-img" style="width:200px; height:80px;"  src='./appstore.svg'>
+				<a href="https://apps.apple.com/ca/app/big-beans-player-2/id1599886852" target="_blank"><img class="responsive-img" style="width:200px; height:80px;"  src='./appstore.svg'></a>
 
 			</div>
 		</div>
@@ -337,10 +344,10 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 				 
 								<div class="col s6 center-align">
-									<i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
+									<a href="#" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
 								</div>
 								<div class="col s6 center-align">
-									<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i>
+									<a href="#" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
 								</div>
 							
 							
@@ -357,7 +364,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<div class="col s4">
 							</div>
 							<div class="col s4">
-								<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:60px;'>arrow_drop_down</i>
+							<a href="#" style="color:white;">	<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
 							</div>
 							<div class="col s4">
 							</div>
@@ -398,7 +405,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	
 
-	<div class="row"  style="background-image:url('./Image\ 2021-12-30\ at\ 7.28\ PM.jpeg');background-repeat:no-repeat;background-size:cover;
+	<div class="row"  style="background-image:url('./contactcloser.jpeg');background-repeat:no-repeat;background-size:cover;
 	background-position:center;">
 
 		<div class="col s2"></div>
@@ -460,10 +467,10 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 	 
 					<div class="col s4 center-align">
-						<i ng-click="openInfoSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i>
+						<a href="#" style="color:white;">	<i ng-click="openInfoSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 					</div>
 					<div class="col s4 center-align">
-						<i ng-click="openInfoSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i>
+						<a href="#" style="color:white;">	<i ng-click="openInfoSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 					</div>
 					<div class="col s4 center-align">
 					</div>
@@ -481,7 +488,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<div class="col s4">
 				</div>
 				<div class="col s4 center-align">
-					<i ng-click="goToSecondDiv()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>
+					<a href="#" style="color:white;">	<i ng-click="goToFourthDiv()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
 				</div>
 				<div class="col s4">
 				</div>
@@ -630,13 +637,13 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 	 
 					<div class="col s4 center-align">
-						<i ng-click="openCharacterSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i>
+						<a href="#" style="color:white;">	<i ng-click="openCharacterSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 					</div>
 					<div class="col s4 center-align">
-						<i ng-click="openCharacterSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i>
+						<a href="#" style="color:white;">	<i ng-click="openCharacterSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 					</div>
 					<div class="col s4 center-align">
-						<i ng-click="openCharacterSlider3()" class="material-icons white-text" style='font-size:40px;'>crop_din</i>
+						<a href="#" style="color:white;">	<i ng-click="openCharacterSlider3()" class="material-icons white-text" style='font-size:40px;'>crop_din</i> </a>
 					</div>
 				
 			
@@ -652,7 +659,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<div class="col s4">
 				</div>
 				<div class="col s4 center-align">
-					<i ng-click="goToSecondDiv()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>
+					<a href="#" style="color:white;">	<i ng-click="goToNftPage()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
 				</div>
 				<div class="col s4">
 				</div>
@@ -725,7 +732,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 </div>
 
-<div id="thirdDiv" style="border:5px solid transparent;">
+<div id="nft" style="border:5px solid transparent;">
 
 	<div class='row'></div>
 	<div class='row'></div>
@@ -833,7 +840,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<div class="col s4">
 				</div>
 				<div class="col s4 center-align">
-					<i ng-click="goToSecondDiv()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>
+					<a href="#" style="color:white;">	<i ng-click="goToContactPage()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
 				</div>
 				<div class="col s4">
 				</div>
@@ -869,12 +876,12 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 		
 			
-<div id="fourthDiv" style="border:5px solid transparent;" >
+<div id="" style="border:5px solid transparent;" >
 
 
 
 
-		<div id="fourthDiv" style="border:5px solid transparent;" >
+		<div id="contactpage" style="border:5px solid transparent;" >
 
 
 
