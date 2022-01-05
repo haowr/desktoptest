@@ -34,12 +34,13 @@
         $scope.homeSlide1           = true;
         $scope.homeSlide2           = false;
         $scope.homeSlide3          = false;
-        $scope.audio                = new Audio('../audio/nav.wav')
+        $scope.audio                = new Audio('../term.mp3')
         $scope.bgaudio              = new Audio('../images/web.wav'
         )
         $scope.characterSlider1 = true;
         $scope.chararcterSlider2 = false;
         $scope.characterSlider3 = false;
+        $scope.audio.play()
         $scope.openCharacterSlider1 = function(){
             console.log("clicked")
 
