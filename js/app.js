@@ -40,12 +40,7 @@
         $scope.characterSlider1 = true;
         $scope.chararcterSlider2 = false;
         $scope.characterSlider3 = false;
-        $scope.audio.play()
-        $scope.playAudio = function(){
-
-            $scope.audio.play()
-
-        }
+   
         $scope.openCharacterSlider1 = function(){
             console.log("clicked")
 
@@ -204,7 +199,7 @@
 
             }
         }
-        $scope.openMenu= ()=>{
+        $scope.openMenu= function(){
 
             console.log("clickeddd")
             $scope.audio.play()
@@ -297,6 +292,7 @@
    }
         $scope.goToNftPage = function(){
 
+            console.log('clicked')
             $('html, body').animate({
                 scrollTop: $("#nft").offset().top
             }, 1000); 
@@ -329,6 +325,8 @@
 
         }
           $scope.goToHome = function(){
+
+            console.log("go to home")
  $('html, body').animate({
                 scrollTop: $("#goToHome").offset().top-100 
             },500); 
@@ -340,7 +338,7 @@
 
         }
         
-      $scope.goToHome()
+      //$scope.goToHome()
      //   $scope.clickTest()
         $scope.openContactPage     = function(){
 
@@ -356,59 +354,6 @@
 
         }
         
-        $scope.openShopPage = function(){
-
-
-            $scope.audio.play()
-
-                if( !$scope.shopOpen){
-
-                    $scope.homePageOpen = false;
-                    $scope.soundOpen    = false;
-                    $scope.shopOpen     = true;
-
-                }
-
-        }
-
-        $scope.openSoundPage = function(){
-
-            if(!$scope.soundOpen){
-
-                    $scope.soundOpen        = true;
-                    $scope.homePageOpen     = false;
-                    $scope.contactPageOpen  = false;
-                    $scope.lightsPageOpen   = false;
-
-            }
-
-        }
-
-        $scope.openLightsPage = function(){
-
-            if(!$scope.lightsPageOpen){
-
-                $scope.lightsPageOpen   = true;
-                $scope.soundOpen        = false;
-                $scope.contactPageOpen  = false;
-                $scope.homePageOpen     = false;
-
-            }
-
-        }
-
-        $scope.openHomePage = function(){
-
-            if(!$scope.homePageOpen){
-
-                $scope.homePageOpen         = true;
-                $scope.contactPageOpen      = false;
-                $scope.soundOpen            = false;
-                $scope.lightsPageOpen       = false;
-
-            }
-
-        }
 
 
     }]);
