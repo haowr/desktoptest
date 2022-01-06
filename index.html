@@ -205,9 +205,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 </style>
 
 
-<div class="navbar-fixed black hide-on-med-and-up" style=" z-index:500000;height:80px; box-shadow:4px solid black; background-image:url('./bckrndblur.png')">
-	<nav class=" " style="  background-image:url('./bckrndblur.png')">
-	  <div class="nav-wrapper">
+<div class="navbar-fixed  hide-on-med-and-up" style=" z-index:500000;height:80px; box-shadow:4px solid black; background-image:url('./bckrndblur.jpg')">
+	<nav class=" " style=" background-color:black !important; background-image:url('./bckrndblur.jpg')">
+		<div class="nav-wrapper">
 		  <!--<a href="#" class="brand-logo left">Logo</a>-->
 		<img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" />
   
@@ -219,8 +219,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	  </div>
 	</nav>
   </div>
-  <div class="navbar-fixed black hide-on-small-only" style=" z-index:50000; box-shadow:4px 4px 4px black; background-image:url('./bckrndblur.png')">
-	<nav class=" " style="  background-image:url('./bckrndblur.png')">
+  <div class="navbar-fixed  hide-on-small-only" style=" z-index:50000; box-shadow:4px 4px 4px black; ">
+	<nav class=" " style=" background-color:black !important; ">
 	  <div class="">
 		  <!--<a href="#/" class="brand-logo left">Logo</a>-->
 		  <a href="#/" ng-click="goToHome()">  <img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" /></a>
@@ -820,11 +820,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 							<div class="row"></div>	
 					
-		<div class="col s6">
+		<div class="col s6 center-align " >
 		
 			
 			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
-	<img src="./fg-01.png" class="responsive-img">
+	<img src="./fg-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 				<div class="row"></div>
 				<div class="row" style="">
 	
@@ -838,11 +838,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				</div>
 	
 			</div>
-			<div class="col s6">
+			<div class="col s6 center-align">
 		
 			
 				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans CartoonsThe story of beans starts in an abandoned robot factory in Meta City. </p>
-				<img src="./d-01.png" class="responsive-img">
+				<img src="./d-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 
 					<div class="row"></div>
 					<div class="row" style="">
@@ -867,7 +867,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								
 								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">In-game rewards Earn exclusive NFTs, Virtual land, and new breed characters</p>
 								<br>
-								<img src="./w-01.png" class="responsive-img" style="height:80px; width:80px;">
+								<img src="./w-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 
 									<div class="row"></div>
 									<div class="row" style="">
@@ -886,7 +886,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							
 								
 									<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earning $HONEY Our in-game token that is issued for participation an any activity</p>
-									<img src="./zz-01.png" class="responsive-img">
+									<img src="./zz-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 
 										<div class="row"></div>
 										<div class="row" style="">
@@ -914,8 +914,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			<div >
 	
 		 
-				<h1 class="animated  white-text" style="font-family:'Oswald';">NFTS!</h1>
-				<h1 class="animated  white-text" style="font-family:'Oswald';">OWN YOUR WORLD!</h1>
+				<h1 id="nfttext" class="animated  white-text" style="font-family:'Oswald';">NFTS!</h1>
+				<h1 id="own" class="animated  white-text" style="font-family:'Oswald';">OWN YOUR WORLD!</h1>
 				<div class="col s12" style="border:2px solid white;"></div>
 				<br>
 			
@@ -989,7 +989,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	
 	
-			<div id="contactpage" style="background-image:url('./earnbackground.jpg');background-repeat:no-repeat;;
+			<div id="contactpage" style="background-image:url('./earnbackground.jpg'); background-size:cover;
 			background-position:center;" >
 	
 	
@@ -1384,6 +1384,7 @@ $('.scrollspy').scrollSpy({
 $(window).scroll(function() {  
 	
 	console.log($(window).scrollTop())
+
 	if ($(window).scrollTop() >= 700) {
         //clearHeader, not clearheader - caps H
 		console.log(scroll)  
@@ -1401,6 +1402,18 @@ $(window).scroll(function() {
     }else{
 		$("#demon").removeClass("fadeInLeft");
 		$("#zizu").removeClass("fadeInLeft");
+
+    }
+
+	if ($(window).scrollTop() >= 1841) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+       
+		$("#nfttext").addClass("fadeInRight");
+		$("#own").addClass("fadeInRight");
+    }else{
+		$("#nfttext").removeClass("fadeInRight");
+		$("#own").removeClass("fadeInRight");
 
     }
 	if ($(window).scrollTop() >= 3127) {
