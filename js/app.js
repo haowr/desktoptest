@@ -34,7 +34,13 @@
         $scope.homeSlide1           = true;
         $scope.homeSlide2           = false;
         $scope.homeSlide3          = false;
+        $scope.audioOnIcon            = false;
+        $scope.audioOffIcon            = true;
         $scope.audio                = new Audio('../term.mp3')
+        $scope.audio.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        }, false);
         $scope.bgaudio              = new Audio('../images/web.wav'
         )
         $scope.characterSlider1 = true;
@@ -44,9 +50,17 @@
         $scope.playAudio = function(){
 
             $scope.audio.play()
+            $scope.audioOffIcon = false;
+            $scope.audioOnIcon = true;
 
         }
+        $scope.stopAudio = function(){
 
+            $scope.audio.pause()
+            $scope.audioOffIcon = true;
+            $scope.audioOnIcon = false;
+
+        }
         $scope.openCharacterSlider1 = function(){
             console.log("clicked")
 

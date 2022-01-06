@@ -52,7 +52,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="./materialize.css">
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
   crossorigin="anonymous" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN">
@@ -68,7 +68,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <!-- JavaScript Dependencies -->
-
+<link rel="stylesheet" href="./materialize.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -204,7 +204,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
   min-height: 100%;
 }
 </style>
-<div class="navbar-fixed black" style=" box-shadow:4px solid black; background-image:url('./bckrndblur.png')">
+<div class="navbar-fixed black" style=" box-shadow:4px 4px 4px black; background-image:url('./bckrndblur.png')">
   <nav class=" " style="  background-image:url('./bckrndblur.png')">
     <div class="">
 		<!--<a href="#/" class="brand-logo left">Logo</a>-->
@@ -225,20 +225,835 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
   </nav>
 </div>
 
-<a ng-click="playAudio()" href="#/">
-<i style="position:fixed; top:20; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_up</i>
+<a ng-if="audioOffIcon"ng-click="playAudio()" href="#/">
+<i style="position:fixed; top:20; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_off</i>
 </a>
-
-<body class="hide-on-med-and-up" >
+<a ng-if="audioOnIcon"   ng-click="stopAudio()" href="#/">
+	<i style="position:fixed; top:20; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_up</i>
+	</a>
+<body   >
   
-	
-	<!--
-	<a href="#" ng-click="clickTest()"  style="z-index:100; position:fixed; top: 30;">
-    <i style="position:absolute;top:50vh; left:35vw;font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-    </i>
-    </a>-->
 
-		<div class="row">
+	<div  class="hide-on-small-only ">
+		<div id="goToHome" class="row" style="background-image:url('./BBBCKRNDLESS.png');background-repeat:no-repeat;background-size:cover;
+		background-position:center;">
+	
+	
+		
+			<div ng-if="homeSlide1"  class="col s6 right-align">
+			
+				<img class="responsive-img" src="./untitled.png" style="height:600px; ">
+	
+			</div>
+			<div ng-if="homeSlide2" style="height:600px"  class="col s6 right-align">
+			
+				<img class="responsive-img" src="./logotrans.gif" style=" height:500px; ">
+	
+			</div>
+			<div class="col s6">
+				<div class="row">
+		
+				
+					
+				
+					<div class="col s2 center-align" style="">
+		
+		
+					</div>
+					<div class="col s9">
+						<div class="row">
+						<div class="col s12">
+		
+						<div ng-if="homeSlide1" class="left-align">
+		<br>
+	
+							<h2 id="canyouescape" class="animated white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h2>
+							<h2 id="beansmeta" class="animated  white-text" style="font-family:'Oswald';">BEANS META?</h2>
+							<div class="col s12" style="border:2px solid white;"></div>
+							<br>
+							<h4 class="white-text animated flash "style="font-family:'Oswald';">Watch The Trailer!</h4>
+							<a href="https://www.youtube.com/watch?v=cPR6_4RJSJk" target="_blank"class="waves-effect waves-light red btn black-font"><i class="material-icons right">chevron_right</i>WATCH!</a>
+							<div class="row">
+							<div class="col s8">
+								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+	
+							</div>
+							<div class="col s4"></div>
+						</div>
+						</div>
+		
+						<div ng-if="homeSlide2">
+		
+					
+								<h2 class="white-text" style="font-family:'Oswald' !important;">Join The Crew</h2>
+								<h5 class="animated    white-text" style="font-family:'Oswald' !important;">Play For A Spot On The Whitelist!</h5>
+								<div class="col s12" style="border:2px solid white;"></div>
+								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+	
+			<div class="row">
+				<div class="col s6">
+					<a href="https://apps.apple.com/ca/app/big-beans-player-2/id1599886852" target="_blank"><img class="responsive-img" style="width:200px; height:80px;" src='./gps.svg'></a>
+				</div>
+				<div class="col s6">
+					<a href="https://apps.apple.com/ca/app/big-beans-player-2/id1599886852" target="_blank"><img class="responsive-img" style="width:200px; height:80px;"  src='./appstore.svg'></a>
+	
+				</div>
+			</div>
+									
+	
+							
+		
+						</div>
+		
+						<div ng-if="homeSlide3">
+		
+							<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
+							<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">BEANS META?</h1>
+							<br>
+							<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
+							<a class="waves-effect waves-light btn" ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+		
+						</div>
+		
+							<div class="row"></div>
+							<div class="row">
+		
+		
+					 
+									<div class="col s4 center-align">
+										<div class="row">
+											<div class="col s6">
+												<a href="javascript:void(0)" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
+	
+											</div>
+											<div class="col s6">
+												<a href="javascript:void(0)" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
+	
+											</div>
+											</div>
+											<div class="row">
+												<div class="col s6">
+													<a href="#/" style="color:white;">	<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:80px; padding-bottom:50px;'>arrow_drop_down</i></a>
+		
+												</div>
+												<div class="col s6">
+		
+												</div>
+												</div>
+									</div>
+									<div class="col s8 " >
+	
+									</div>
+								
+								
+							
+								
+					
+								
+									  
+							</div>
+			
+						</div>
+		
+						
+					
+		
+						</div>
+					
+					</div>
+				<div class="col s1"></div>
+		
+					
+						  
+				</div>
+			</div>
+		</div>
+	
+			<div class="row">
+				
+	<div id="firstDiv" style="background-image:url('./earnbackground.png');background-position:center;border:5px solid transparent;">
+	
+		<div class='row'></div>
+		<div class='row'></div>
+		
+		<div class='row'></div>
+		
+		
+		
+		
+		
+	
+		<div class="row"  style="background-image:url('');background-repeat:no-repeat;background-size:cover;
+		background-position:center;">
+	
+			<div class="col s1"></div>
+	
+			<div class="col s5">
+	
+				<div class="row">
+				
+					<div class="col s12">
+	
+						<div class="row">
+					
+					
+		<div class="col s12">
+		
+			<div ng-if="infoSlider1">
+	
+				<h1 id="earnwhileyouplay" class="animated  white-text" style="font-family:'Oswald';">EARN WHILE YOU PLAY!</h1>
+	
+				<h5 class="white-text animated flash "style="font-family:'Oswald';">A revolutionary gaming token with an innovative buy-back system on BSC</h5>
+	
+				<div class="col s12" style="border:2px solid white;"></div>
+	
+				<div class="row">
+					<div class="col s10">
+		<br>
+		<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+			</div>
+			<div class="col s2"></div>
+			</div>
+			
+			</div>
+	
+			<div ng-if="infoSlider2">
+	
+				<h1 class="animated  white-text" style="font-family:'Oswald';">Your World, Your Community!</h1>
+	
+				<h5 class="white-text animated flash "style="font-family:'Oswald';">A revolutionary gaming token with an innovative buy-back system on BSC</h5>
+	
+				<div class="col s12" style="border:2px solid white;"></div>
+	
+				<div class="row">
+					<div class="col s10">
+		<br>
+		<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+			</div>
+			<div class="col s2"></div>
+			</div>
+			
+				</div>
+	
+		
+	
+				<div class="row"></div>
+				<div class="row" style="">
+	
+	
+		 
+						<div class="col s4 center-align">
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+						</div>
+						<div class="col s4 center-align">
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+						</div>
+						<div class="col s4 center-align">
+						</div>
+					
+				
+					
+		
+					
+						  
+				</div>
+				<div class="row">
+	
+	
+		 
+					
+					<div class="col s8 center-align">
+						<a href="#/" style="color:white;">	<i ng-click="goToFourthDiv()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
+					</div>
+					<div class="col s4">
+					</div>
+				
+			
+				
+	
+				
+					  
+			</div>
+			</div>
+						</div>
+		
+					</div>
+					
+					
+					<div ng-if="infoSlider1" class="col s6 animated fadeIn" >
+				
+					</div>
+					<div ng-if="infoSlider2" class="col s6 animated fadeIn" >
+						
+						<br>
+					
+					</div>
+					<div ng-if="infoSlider3" class="col s6 animated fadeIn" >
+			
+						
+					</div>
+						  
+				</div>
+			</div>
+			<div ng-if="infoSlider1" class="col s5 right-align">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<video width="100%" playsinline autoplay muted loop controls style="border:2px solid white; box-shadow:2px 2px 2px black;">
+					<source src="./raed.mp4" type="video/mp4">
+				</video>
+				</div>
+				<div ng-if="infoSlider2" class="col s5 right-align">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<video width="100%" playsinline autoplay muted loop controls style="border:2px solid white;">
+						<source src="./tst.mp4" type="video/mp4">
+					</video>
+					</div>
+			<div class="col s1"></div>
+	
+			</div>
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	<div id="thirdDiv" style="border:5px solid transparent;">
+	
+		<div class='row'></div>
+		<div class='row'></div>
+		
+		<div class='row'></div>
+		
+		
+		
+		
+		
+	
+		<div class="row"  style="background-image:url('characterbackground.png');background-repeat:no-repeat;background-size:cover;
+		background-position:center; border:2px solid white;">
+	
+			<div class="col s1"></div>
+	
+			<div class="col s10">
+	
+				<div class="row">
+				
+					<div class="col s5">
+	
+						<div class="row">
+					
+					
+		<div class="col s12">
+		
+			<div ng-if="characterSlider1">
+	
+				<h1 class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
+				<h1 class="animated  white-text" style="font-family:'Oswald';">THE LITTLE DEMON</h1>
+				<div class="col s12" style="border:2px solid white;"></div>
+				<br>
+				<h4 class="white-text animated flash "style="font-family:'Oswald';">Fast. Nimble. Powerful.</h4>
+				<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>MINT!</a>
+				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. 
+	
+				 </p>
+			</div>
+	
+			<div ng-if="characterSlider2">
+	
+				<h1 class="animated  white-text" style="font-family:'Oswald';">Raed</h1>
+				<h1 class="animated  white-text" style="font-family:'Oswald';">THE HORNED BULL</h1>
+				<div class="col s12" style="border:2px solid white;"></div>
+				<br>
+				<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
+				<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>MINT!</a>
+				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. 
+	
+				</p>
+			
+				</div>
+	
+			<div ng-if="characterSlider3">
+	
+				<h1 class="animated  white-text" style="font-family:'Oswald';">STEELZ</h1>
+				<h1 class="animated  white-text" style="font-family:'Oswald';">THE SENTINAL</h1>
+				<div class="col s12" style="border:2px solid white;"></div>
+				<br>
+				<h4 class="white-text animated flash "style="font-family:'Oswald';">Dependable. Unrelenting.</h4>
+				<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>MINT!</a>
+				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. 
+	
+				</p>
+			
+				</div>
+	
+				<div class="row"></div>
+				<div class="row" style="">
+	
+	
+		 
+						<div class="col s4 center-align" style="box-shadow:2px 2px 2px black;">
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+						</div>
+						<div class="col s4 center-align">
+							<a href="javascript:void(0)" style="color:white;" style="box-shadow:2px 2px 2px black;">	<i ng-click="openCharacterSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+						</div>
+						<div class="col s4 center-align">
+							<a href="javascript:void(0)"style="color:white;">	<i ng-click="openCharacterSlider3()" class="material-icons white-text" style='font-size:40px;'>crop_din</i> </a>
+						</div>
+					
+				
+					
+		
+					
+						  
+				</div>
+				<div class="row">
+	
+	
+		 
+					<div class="col s4">
+					</div>
+					<div class="col s4 center-align">
+						<a href="#/" style="color:white;">	<i ng-click="goToNftPage()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
+					</div>
+					<div class="col s4">
+					</div>
+				
+			
+				
+	
+				
+					  
+			</div>
+			</div>
+						</div>
+		
+					</div>
+					<div class="col s1"></div>
+	
+					
+					
+					<div ng-if="characterSlider1" class="col s6 animated fadeIn" style="border:2px solid white;"  >
+						<br>
+						<br></br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					
+					
+						<img src="./12.gif" class="responsive-img">
+					<div class="row"></div>
+									<div class="row"></div>
+	
+									<div class="row"></div>
+									<div class="row"></div>
+	
+									<div class="row"></div>
+	
+									<div class="row"></div>
+	
+									<div class="row"></div>
+	
+									<div class="row"></div>
+	
+	
+					</div>
+					<div ng-if="characterSlider2" class="col s6 animated fadeIn" >
+						<br>
+						<br></br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					
+						
+						<img src="./11.gif" class="responsive-img">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div ng-if="characterSlider3" class="col s6 animated fadeIn" >
+						<br>
+						<br></br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
+						
+						<img src="./8.gif" class="responsive-img">
+					</div>
+						  
+				</div>
+			</div>
+			<div class="col s1">
+			</div>
+		
+			</div>
+	
+	
+	
+	
+	
+	</div>
+	
+	<div id="nft" style="border:5px solid transparent;">
+	
+		<div class='row'></div>
+		<div class='row'></div>
+		
+		<div class='row'></div>
+		
+		
+		
+		
+		
+	
+		<div class="row"  style="background-image:url('joj-01.png');background-repeat:no-repeat;background-size:cover;
+		background-position:center;">
+	
+			<div class="col s1"></div>
+	
+			<div class="col s10">
+	
+				<div class="row">
+				
+	
+					<div class="col s5">
+	<div class="row"></div>
+	<div class="row"></div>
+	
+	<div class="row"></div>
+	
+	<div class="row"></div>
+	<div class="row"></div>
+	
+	<div class="row"></div>
+	
+	<div class="row"></div>
+						<div class="row left-align">
+							<div class="row"></div>
+	
+							<div class="row"></div>	
+					
+		<div class="col s6">
+		
+			
+			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
+	
+				<div class="row"></div>
+				<div class="row" style="">
+	
+	
+		 
+				
+					
+		
+					
+						  
+				</div>
+	
+			</div>
+			<div class="col s6">
+		
+			
+				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
+		
+					<div class="row"></div>
+					<div class="row" style="">
+		
+		
+			 
+					
+						
+			
+						
+							  
+					</div>
+	
+				</div>
+						</div>
+		
+						<div class="row left-align">
+					
+					
+							<div class="col s6">
+							
+								
+								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
+						
+									<div class="row"></div>
+									<div class="row" style="">
+						
+						
+							 
+									
+										
+							
+										
+											  
+									</div>
+		
+								</div>
+								<div class="col s6">
+							
+								
+									<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
+							
+										<div class="row"></div>
+										<div class="row" style="">
+							
+							
+								 
+										
+											
+								
+											
+												  
+										</div>
+								
+									</div>
+											</div>
+					</div>
+						<div class="col s1"></div>
+					<div class="col s5">
+	
+						<div class="row">
+					
+					
+		<div class="col s12">
+		
+			<div >
+	
+		 
+				<h1 class="animated  white-text" style="font-family:'Oswald';">NFTS!</h1>
+				<h1 class="animated  white-text" style="font-family:'Oswald';">OWN YOUR WORLD!</h1>
+				<div class="col s12" style="border:2px solid white;"></div>
+				<br>
+			
+				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Using our NFTs exclusively, players engage in adventurous games and compete against each other while earning tokens. Users can purchase virtual land in our Meta world and get the chance to watch cartoons in an augmented landscape.
+				 </p>
+				 <video width="100%" playsinline autoplay muted loop controls>
+					<source src="./56.mp4" type="video/mp4">
+					
+					Your browser does not support the video tag.
+				  </video>
+			</div>
+	
+	
+				<div class="row"></div>
+				<div class="row" style="">
+	
+	
+		 
+				
+					
+		
+					
+						  
+				</div>
+				<div class="row">
+	
+	
+		 
+					<div class="col s4">
+					</div>
+					<div class="col s4 center-align">
+						<a href="#/" style="color:white;">	<i ng-click="goToContactPage()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
+					</div>
+					<div class="col s4">
+					</div>
+				
+			
+				
+	
+				
+					  
+			</div>
+			</div>
+						</div>
+		
+					</div>
+					
+					
+				
+				</div>
+	
+			</div>
+			<div class="col s1">
+			</div>
+		
+			</div>
+	
+	
+	
+	
+	
+	</div>
+	
+				
+				
+	
+			
+				
+	<div id="" style="border:5px solid transparent;" >
+	
+	
+	
+	
+			<div id="contactpage" style="border:5px solid transparent;" >
+	
+	
+	
+				<div class="row"  style=" background-size: cover;">
+					<div class="col s2"></div>
+					<div class="col s8">
+						<div class="row">
+				
+				
+							
+				
+				
+				<div class="col s12">
+				
+					<div ng-if="homeSlide1o">
+			
+						<h1 class="animated slideInRight white-text" style="font-family:'Oswald';">CONTACT US!</h1>
+						<h1 class="animated slideInRight white-text" style="font-family:'Oswald';">BEANS META?</h1>
+						<br>
+						<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
+						<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+			
+					</div>
+			
+					<div ng-if="homeSlide2o">
+			
+						<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
+						<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">BEANS META?</h1>
+						<br>
+						<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
+						<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+			
+					</div>
+			
+					<div ng-if="homeSlide3o">
+			
+						<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
+						<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">BEANS META?</h1>
+						<br>
+						<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
+						<a class="waves-effect waves-light btn" ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
+			
+					</div>
+					<div class="row">
+			
+						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">GET IN TOUCH!</h1>
+		
+							</p>
+					</div>
+						<div class="row"></div>
+						<div class="row">
+			
+			
+				 
+								<div class="col s4">
+									<i class="fa fa-instagram white-text" style="font-size:50px;" aria-hidden="true"></i>
+								</div>
+								<div class="col s4">
+									<img src="./twit.svg" style = "height:50px; width:50px;">
+								</div>
+								<div class="col s4">
+									<img src="./twit.svg" style = "height:50px; width:50px;">
+								</div>
+							
+						
+							
+				
+							
+								  
+						</div>
+						<div class="row">
+			
+							<p class="white-text animated fadeIn flow-text" style=" font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. 
+			
+								</p>
+						</div>
+				
+				 
+							<div class="col s4">
+							</div>
+							<div class="col s4 center-align">
+								<!--<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>-->
+							</div>
+							<div class="col s4">
+							</div>
+						
+					
+						
+			
+						
+							  
+					</div>
+					</div>
+					
+				</div>
+				
+							</div>
+							
+				
+							
+								  
+			
+					<div class="col s2">
+					</div>
+				
+					</div>
+	
+	</div>
+				
+					  
+			</div>
+	
+	
+	
+	
+	
+	
+	
+		</div>
+	
+		<div class="row hide-on-med-and-up">
 		
 			<div class="slider section scrollspy" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.png')">
 				<ul class="slides" style="background-color:transparent; height:600px;">
@@ -476,836 +1291,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		</div>
 
 
-
-
-
-
-
-
-
-
-
-</body>
-<body class="hide-on-small-only"  >
-  
-
-
-	<div id="goToHome" class="row" style="background-image:url('./BBBCKRNDLESS.png');background-repeat:no-repeat;background-size:cover;
-	background-position:center;">
-
-
-	
-		<div class="col s6 right-align">
-			<br>
-			<br>
-			<img class="responsive-img" src="./untitled.png" style="border:2px solid white; box-shadow:3px 3px 3px black;">
-
-		</div>
-		<div class="col s6">
-			<div class="row">
-	
-			
-				
-			
-				<div class="col s2 center-align" style="">
-	
-	
-				</div>
-				<div class="col s9">
-					<div class="row">
-					<div class="col s12">
-	
-					<div ng-if="homeSlide1" class="left-align">
-	<br>
-
-						<h2 id="canyouescape" class="animated white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h2>
-						<h2 id="beansmeta" class="animated  white-text" style="font-family:'Oswald';">BEANS META?</h2>
-						<div class="col s12" style="border:2px solid white;"></div>
-						<br>
-						<h4 class="white-text animated flash "style="font-family:'Oswald';">Watch The Trailer!</h4>
-						<a href="https://www.youtube.com/watch?v=cPR6_4RJSJk" target="_blank"class="waves-effect waves-light red btn black-font"><i class="material-icons right">chevron_right</i>WATCH!</a>
-						<div class="row">
-						<div class="col s8">
-							<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
-
-						</div>
-						<div class="col s4"></div>
-					</div>
-					</div>
-	
-					<div ng-if="homeSlide2">
-	
-				
-							<h2 class="white-text" style="font-family:'Oswald' !important;">Join The Crew</h2>
-							<h5 class="animated    white-text" style="font-family:'Oswald' !important;">Play For A Spot On The Whitelist!</h5>
-							<div class="col s12" style="border:2px solid white;"></div>
-							<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium.
-
-		<div class="row">
-			<div class="col s6">
-				<a href="https://apps.apple.com/ca/app/big-beans-player-2/id1599886852" target="_blank"><img class="responsive-img" style="width:200px; height:80px;" src='./gps.svg'></a>
-			</div>
-			<div class="col s6">
-				<a href="https://apps.apple.com/ca/app/big-beans-player-2/id1599886852" target="_blank"><img class="responsive-img" style="width:200px; height:80px;"  src='./appstore.svg'></a>
-
-			</div>
-		</div>
-								
-
-						
-	
-					</div>
-	
-					<div ng-if="homeSlide3">
-	
-						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">BEANS META?</h1>
-						<br>
-						<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-						<a class="waves-effect waves-light btn" ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-	
-					</div>
-	
-						<div class="row"></div>
-						<div class="row">
-	
-	
-				 
-								<div class="col s4 center-align">
-									<div class="row">
-										<div class="col s6">
-											<a href="javascript:void(0)" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
-
-										</div>
-										<div class="col s6">
-											<a href="javascript:void(0)" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
-
-										</div>
-										</div>
-										<div class="row">
-											<div class="col s6">
-												<a href="#/" style="color:white;">	<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:80px; padding-bottom:50px;'>arrow_drop_down</i></a>
-	
-											</div>
-											<div class="col s6">
-	
-											</div>
-											</div>
-								</div>
-								<div class="col s8 " >
-
-								</div>
-							
-							
-						
-							
-				
-							
-								  
-						</div>
-		
-					</div>
-	
-					
-				
-	
-					</div>
-				
-				</div>
-			<div class="col s1"></div>
-	
-				
-					  
-			</div>
-		</div>
-	</div>
-
-		<div class="row">
-			
-<div id="firstDiv" style="background-image:url('./earnbackground.png');background-position:center;border:5px solid transparent;">
-
-	<div class='row'></div>
-	<div class='row'></div>
-	
-	<div class='row'></div>
-	
-	
-	
-	
+	</body>
 	
 
-	<div class="row"  style="background-image:url('');background-repeat:no-repeat;background-size:cover;
-	background-position:center;">
-
-		<div class="col s1"></div>
-
-		<div class="col s5">
-
-			<div class="row">
-			
-				<div class="col s12">
-
-					<div class="row">
-				
-				
-	<div class="col s12">
-	
-		<div ng-if="infoSlider1">
-
-			<h1 id="earnwhileyouplay" class="animated  white-text" style="font-family:'Oswald';">EARN WHILE YOU PLAY!</h1>
-
-			<h5 class="white-text animated flash "style="font-family:'Oswald';">A revolutionary gaming token with an innovative buy-back system on BSC</h5>
-
-			<div class="col s12" style="border:2px solid white;"></div>
-
-			<div class="row">
-				<div class="col s10">
-	<br>
-	<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
-		<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
-		</div>
-		<div class="col s2"></div>
-		</div>
-		
-		</div>
-
-		<div ng-if="infoSlider2">
-
-			<h1 class="animated  white-text" style="font-family:'Oswald';">Your World, Your Community!</h1>
-
-			<h5 class="white-text animated flash "style="font-family:'Oswald';">A revolutionary gaming token with an innovative buy-back system on BSC</h5>
-
-			<div class="col s12" style="border:2px solid white;"></div>
-
-			<div class="row">
-				<div class="col s10">
-	<br>
-	<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
-		<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
-		</div>
-		<div class="col s2"></div>
-		</div>
-		
-			</div>
-
-	
-
-			<div class="row"></div>
-			<div class="row" style="">
-
-
-	 
-					<div class="col s4 center-align">
-						<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-					</div>
-					<div class="col s4 center-align">
-						<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-					</div>
-					<div class="col s4 center-align">
-					</div>
-				
-			
-				
-	
-				
-					  
-			</div>
-			<div class="row">
-
-
-	 
-				
-				<div class="col s8 center-align">
-					<a href="#/" style="color:white;">	<i ng-click="goToFourthDiv()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
-				</div>
-				<div class="col s4">
-				</div>
-			
-		
-			
-
-			
-				  
-		</div>
-		</div>
-					</div>
-	
-				</div>
-				
-				
-				<div ng-if="infoSlider1" class="col s6 animated fadeIn" >
-			
-				</div>
-				<div ng-if="infoSlider2" class="col s6 animated fadeIn" >
-					
-					<br>
-				
-				</div>
-				<div ng-if="infoSlider3" class="col s6 animated fadeIn" >
-		
-					
-				</div>
-					  
-			</div>
-		</div>
-		<div ng-if="infoSlider1" class="col s5 right-align">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<video width="100%" playsinline autoplay muted loop controls style="border:2px solid white; box-shadow:2px 2px 2px black;">
-				<source src="./raed.mp4" type="video/mp4">
-			</video>
-			</div>
-			<div ng-if="infoSlider2" class="col s5 right-align">
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<video width="100%" playsinline autoplay muted loop controls style="border:2px solid white;">
-					<source src="./tst.mp4" type="video/mp4">
-				</video>
-				</div>
-		<div class="col s1"></div>
-
-		</div>
-
-
-
-
-
-</div>
-
-
-<div id="thirdDiv" style="border:5px solid transparent;">
-
-	<div class='row'></div>
-	<div class='row'></div>
-	
-	<div class='row'></div>
-	
-	
-	
-	
-	
-
-	<div class="row"  style="background-image:url('characterbackground.png');background-repeat:no-repeat;background-size:cover;
-	background-position:center; border:2px solid white;">
-
-		<div class="col s1"></div>
-
-		<div class="col s10">
-
-			<div class="row">
-			
-				<div class="col s5">
-
-					<div class="row">
-				
-				
-	<div class="col s12">
-	
-		<div ng-if="characterSlider1">
-
-			<h1 class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
-			<h1 class="animated  white-text" style="font-family:'Oswald';">THE LITTLE DEMON</h1>
-			<div class="col s12" style="border:2px solid white;"></div>
-			<br>
-			<h4 class="white-text animated flash "style="font-family:'Oswald';">Fast. Nimble. Powerful.</h4>
-			<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>MINT!</a>
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. 
-
-			 </p>
-		</div>
-
-		<div ng-if="characterSlider2">
-
-			<h1 class="animated  white-text" style="font-family:'Oswald';">Raed</h1>
-			<h1 class="animated  white-text" style="font-family:'Oswald';">THE HORNED BULL</h1>
-			<div class="col s12" style="border:2px solid white;"></div>
-			<br>
-			<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-			<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>MINT!</a>
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. 
-
-			</p>
-		
-			</div>
-
-		<div ng-if="characterSlider3">
-
-			<h1 class="animated  white-text" style="font-family:'Oswald';">STEELZ</h1>
-			<h1 class="animated  white-text" style="font-family:'Oswald';">THE SENTINAL</h1>
-			<div class="col s12" style="border:2px solid white;"></div>
-			<br>
-			<h4 class="white-text animated flash "style="font-family:'Oswald';">Dependable. Unrelenting.</h4>
-			<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>MINT!</a>
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. 
-
-			</p>
-		
-			</div>
-
-			<div class="row"></div>
-			<div class="row" style="">
-
-
-	 
-					<div class="col s4 center-align" style="box-shadow:2px 2px 2px black;">
-						<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-					</div>
-					<div class="col s4 center-align">
-						<a href="javascript:void(0)" style="color:white;" style="box-shadow:2px 2px 2px black;">	<i ng-click="openCharacterSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-					</div>
-					<div class="col s4 center-align">
-						<a href="javascript:void(0)"style="color:white;">	<i ng-click="openCharacterSlider3()" class="material-icons white-text" style='font-size:40px;'>crop_din</i> </a>
-					</div>
-				
-			
-				
-	
-				
-					  
-			</div>
-			<div class="row">
-
-
-	 
-				<div class="col s4">
-				</div>
-				<div class="col s4 center-align">
-					<a href="#/" style="color:white;">	<i ng-click="goToNftPage()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
-				</div>
-				<div class="col s4">
-				</div>
-			
-		
-			
-
-			
-				  
-		</div>
-		</div>
-					</div>
-	
-				</div>
-				<div class="col s1"></div>
-
-				
-				
-				<div ng-if="characterSlider1" class="col s6 animated fadeIn" style="border:2px solid white;"  >
-					<br>
-					<br></br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				
-				
-					<img src="./12.gif" class="responsive-img">
-				<div class="row"></div>
-								<div class="row"></div>
-
-								<div class="row"></div>
-								<div class="row"></div>
-
-								<div class="row"></div>
-
-								<div class="row"></div>
-
-								<div class="row"></div>
-
-								<div class="row"></div>
-
-
-				</div>
-				<div ng-if="characterSlider2" class="col s6 animated fadeIn" >
-					<br>
-					<br></br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				
-					
-					<img src="./11.gif" class="responsive-img">
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				</div>
-				<div ng-if="characterSlider3" class="col s6 animated fadeIn" >
-					<br>
-					<br></br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					
-					
-					<img src="./8.gif" class="responsive-img">
-				</div>
-					  
-			</div>
-		</div>
-		<div class="col s1">
-		</div>
-	
-		</div>
-
-
-
-
-
-</div>
-
-<div id="nft" style="border:5px solid transparent;">
-
-	<div class='row'></div>
-	<div class='row'></div>
-	
-	<div class='row'></div>
-	
-	
-	
-	
-	
-
-	<div class="row"  style="background-image:url('joj-01.png');background-repeat:no-repeat;background-size:cover;
-	background-position:center;">
-
-		<div class="col s1"></div>
-
-		<div class="col s10">
-
-			<div class="row">
-			
-
-				<div class="col s5">
-<div class="row"></div>
-<div class="row"></div>
-
-<div class="row"></div>
-
-<div class="row"></div>
-<div class="row"></div>
-
-<div class="row"></div>
-
-<div class="row"></div>
-					<div class="row left-align">
-						<div class="row"></div>
-
-						<div class="row"></div>	
-				
-	<div class="col s6">
-	
-		
-		<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
-
-			<div class="row"></div>
-			<div class="row" style="">
-
-
-	 
-			
-				
-	
-				
-					  
-			</div>
-
-		</div>
-		<div class="col s6">
-	
-		
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
-	
-				<div class="row"></div>
-				<div class="row" style="">
-	
-	
-		 
-				
-					
-		
-					
-						  
-				</div>
-
-			</div>
-					</div>
-	
-					<div class="row left-align">
-				
-				
-						<div class="col s6">
-						
-							
-							<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
-					
-								<div class="row"></div>
-								<div class="row" style="">
-					
-					
-						 
-								
-									
-						
-									
-										  
-								</div>
-	
-							</div>
-							<div class="col s6">
-						
-							
-								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
-						
-									<div class="row"></div>
-									<div class="row" style="">
-						
-						
-							 
-									
-										
-							
-										
-											  
-									</div>
-							
-								</div>
-										</div>
-				</div>
-					<div class="col s1"></div>
-				<div class="col s5">
-
-					<div class="row">
-				
-				
-	<div class="col s12">
-	
-		<div >
-
-	 
-			<h1 class="animated  white-text" style="font-family:'Oswald';">NFTS!</h1>
-			<h1 class="animated  white-text" style="font-family:'Oswald';">OWN YOUR WORLD!</h1>
-			<div class="col s12" style="border:2px solid white;"></div>
-			<br>
-		
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Using our NFTs exclusively, players engage in adventurous games and compete against each other while earning tokens. Users can purchase virtual land in our Meta world and get the chance to watch cartoons in an augmented landscape.
-			 </p>
-			 <video width="100%" playsinline autoplay muted loop controls>
-				<source src="./56.mp4" type="video/mp4">
-				
-				Your browser does not support the video tag.
-			  </video>
-		</div>
-
-
-			<div class="row"></div>
-			<div class="row" style="">
-
-
-	 
-			
-				
-	
-				
-					  
-			</div>
-			<div class="row">
-
-
-	 
-				<div class="col s4">
-				</div>
-				<div class="col s4 center-align">
-					<a href="#/" style="color:white;">	<i ng-click="goToContactPage()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i></a>
-				</div>
-				<div class="col s4">
-				</div>
-			
-		
-			
-
-			
-				  
-		</div>
-		</div>
-					</div>
-	
-				</div>
-				
-				
-			
-			</div>
-
-		</div>
-		<div class="col s1">
-		</div>
-	
-		</div>
-
-
-
-
-
-</div>
-
-			
-			
-
-		
-			
-<div id="" style="border:5px solid transparent;" >
-
-
-
-
-		<div id="contactpage" style="border:5px solid transparent;" >
-
-
-
-			<div class="row"  style=" background-size: cover;">
-				<div class="col s2"></div>
-				<div class="col s8">
-					<div class="row">
-			
-			
-						
-			
-			
-			<div class="col s12">
-			
-				<div ng-if="homeSlide1o">
-		
-					<h1 class="animated slideInRight white-text" style="font-family:'Oswald';">CONTACT US!</h1>
-					<h1 class="animated slideInRight white-text" style="font-family:'Oswald';">BEANS META?</h1>
-					<br>
-					<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-					<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-		
-				</div>
-		
-				<div ng-if="homeSlide2o">
-		
-					<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-					<h1 class="animated slideInDown white-text" style="font-family:'Oswald';">BEANS META?</h1>
-					<br>
-					<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-					<a class="waves-effect waves-light btn"><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-		
-				</div>
-		
-				<div ng-if="homeSlide3o">
-		
-					<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-					<h1 class="animated slideInLeft white-text" style="font-family:'Oswald';">BEANS META?</h1>
-					<br>
-					<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-					<a class="waves-effect waves-light btn" ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-		
-				</div>
-				<div class="row">
-		
-					<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">GET IN TOUCH!</h1>
-	
-						</p>
-				</div>
-					<div class="row"></div>
-					<div class="row">
-		
-		
-			 
-							<div class="col s4">
-								<i class="fa fa-instagram white-text" style="font-size:50px;" aria-hidden="true"></i>
-							</div>
-							<div class="col s4">
-								<img src="./twit.svg" style = "height:50px; width:50px;">
-							</div>
-							<div class="col s4">
-								<img src="./twit.svg" style = "height:50px; width:50px;">
-							</div>
-						
-					
-						
-			
-						
-							  
-					</div>
-					<div class="row">
-		
-						<p class="white-text animated fadeIn flow-text" style=" font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. Mauris hendrerit scelerisque pretium. Donec vel blandit tellus, vel tempor magna. Nulla sed metus ut quam tincidunt vestibulum et in nisi. In risus lorem, posuere vitae venenatis eget, blandit dictum massa. Phasellus vehicula odio non interdum vulputate. Proin ligula ex, efficitur sed turpis varius, aliquet aliquam lectus. Curabitur sed nisl nec purus pretium gravida. Praesent vel tempor felis, id fermentum velit. Donec iaculis nibh purus, a efficitur ipsum facilisis vitae. Donec a nulla metus. Sed eu augue luctus, venenatis ex a, efficitur urna. 
-		
-							</p>
-					</div>
-			
-			 
-						<div class="col s4">
-						</div>
-						<div class="col s4 center-align">
-							<!--<i ng-click="clickTest()"class="material-icons white-text animated flash infinite" style='font-size:80px;'>arrow_drop_down</i>-->
-						</div>
-						<div class="col s4">
-						</div>
-					
-				
-					
-		
-					
-						  
-				</div>
-				</div>
-				
-			</div>
-			
-						</div>
-						
-			
-						
-							  
-		
-				<div class="col s2">
-				</div>
-			
-				</div>
-
-</div>
-			
-				  
-		</div>
-
-
-
-
-
-
-
-
-
-
-</body>
 
 
 
