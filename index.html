@@ -242,6 +242,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	  </div>
 	</nav>
   </div>
+
+
 <div class="menufixed" ng-class="{'menularge':menuOpen,'menulist': !menuOpen}">
 
 
@@ -1129,209 +1131,219 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			<div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div class="row">
 					
-				<div class="col s12" style="background-color:transparent; height:600px;">
+				<div class="col s12" style="background-color:transparent;background-image:url('./bckrndblur.jpg')">
 				  
-					<img > <!-- random image -->
 				
-					<div class="caption center-align" style="border:2px solid white;">
+				
+					<div ng-if="homeSlide2"  class=" center-align" style="border:2px solid white;">
 					<h2 class="animated flash" style="font-family:'Oswald' !important;">Can You Escape??</h2>
 					<h3 style="font-family:'Oswald' !important;"">THE META FACTORY?</h3>
 					
 					<a class="blue-grey lighten-2 btn" target="_blank"href="https://www.youtube.com/watch?v=bwUlP_Oeq94&ab_channel=UFOGamingOfficial"><i class="material-icons left">play_arrow</i>WATCH TRAILER</a>
 
-						<img class="img-responsive"  src='./untitled.png'>
+						<!--<img class="img-responsive"  src='./untitled.png'>-->
 					</div>
 
-					<br>
-					<br>
-					<br>
-					<br>
-					
-				
-				  <li>
-					<img > <!-- random image -->
-				
-					<div class="caption center-align" style="border:2px solid white;">
-					<h2 style="font-family:'Oswald' !important;">Join The Crew</h2>
-					<h3 style="font-family:'Oswald' !important;">Sign-Up Today For Access To The Beta</h3>
-					
-					<a class="blue-grey lighten-2 btn"><i class="material-icons left">face</i>Sign-Up!</a>
 
-						<img class="img-responsive"  src='./logotrans.gif'>
-					</div>
-					
-				  </li>
-				
-				</div>
-				</div>
-			  </div>
-
-			  <div class="col s12" id="infopage" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')" id="myDiv">
-				<ul class="slides" style="background-color:transparent; border:2px solid white;">
-				  <li>
-					<img > <!-- random image -->
-					<div class="caption center-align">
-					  <h2 style="font-family:'Oswald' !important;"class="animated flash infinite">An Endless Adventure</h2>
-					  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">New Challenging Locations...More Rewards To Unlock!</h5>
-					 <br> 
-					  <video width="100%" playsinline autoplay muted loop controls>
-						<source src="./tst.mp4" type="video/mp4">
+					<div ng-if="homeSlide1" class="center-align" style="border:2px solid white;">
+						<h2 style="font-family:'Oswald';">Join The Crew</h2>
+						<h3 style="font-family:'Oswald' ">Sign-Up Today For Access To The Beta</h3>
 						
-						Your browser does not support the video tag.
-					  </video>
-					  <a href="#" ng-click="goToCharacterPage()" >
-						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-						</i>
-						</a>
-					  <!--<a href="#" ng-click="goToCharacterPage()" >
-						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-						</i>
-						</a>-->
-					</div>
-					<img class="img-responsive" src='./untitled.png'>
-				  </li>
-				  <li>
-					<img > <!-- random image -->
-					<div class="caption center-align">
-					  <h2 style="font-family:'Oswald' !important;" class="animated fadeIn">EARN WHILE YOU PLAY</h2>
-					  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">Make Money Doing What You love! What More Can You Ask For?</h5>
-					 <br> 
-					  <video width="100%" playsinline autoplay muted loop controls>
-						<source src="./utility.mp4" type="video/mp4">
-						
-						Your browser does not support the video tag.
-					  </video>
-					  <a href="#" ng-click="goToCharacterPage()" >
-						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-						</i>
-						</a>
-					</div>
-					<img class="img-responsive" src='./untitled.png'>
-				  </li>
-				  
-				</ul>
-			  </div>
-
-
-			  <div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
-				<ul class="slides" style="background-color:transparent;">
-				  <li>
-
-				 <!-- random image -->
-					<div class="caption center-align" style="border:2px solid white;">
-					  <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
-					  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
-					  <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald' !important; font-size:16px">( SWIPE TO SCROLL )</h5>
-				   <img class="img-responsive" style="position:absolute:top:0;" src='./zz.png'>
-				  
-						
-				   <div class="col s12">
-					<a href="#" ng-click="goToNftpage()">
-						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-						</i>
-				</a>
-				  </div>
-						
+						<a class="blue-grey lighten-2 btn"><i class="material-icons left">face</i>Sign-Up!</a>
+	
+							<!--<img class="img-responsive"  src='./logotrans.gif'>-->
 						</div>
-				  </li>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col s6 center-align">
+							<a href="javascript:void(0)" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 
-				  
-				  <li>
+						</div>
+						<div class="col s6 center-align">
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 
-					<!-- random image -->
-					   <div class="caption center-align" style="border:2px solid white;">
-						 <h1 style="font-family:'Oswald'" class="animated fadeIn">RAED</h1>
-						 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
-						 <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald'; font-size:16px">( SWIPE TO SCROLL )</h5>
-
-						 <img class="img-responsive" src='./rshad.png'>
-						
-
-						 <div class="col s12">
-							<a href="#" ng-click="goToNftPage()"  >
-								<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-								</i>
-								</a>
-						  </div>
-
+						</div>
+						</div>
+				
+			
+					<img > <!-- random image -->
+				
 					
-					
-					
-					
-					</div>
-					
+			
+				</div>
+				</div>
+			  </div>
+			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+				<div  class="col s12" id="infopage" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')" id="myDiv">
+				
+						<img > <!-- random image -->
+						<div ng-if="infoSlide1" class=" center-align">
+						  <h2 style="font-family:'Oswald' !important;"class="animated flash infinite">An Endless Adventure</h2>
+						  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">New Challenging Locations...More Rewards To Unlock!</h5>
+						 <br> 
+						  <video width="100%" playsinline autoplay muted loop controls>
+							<source src="./tst.mp4" type="video/mp4">
+							
+							Your browser does not support the video tag.
+						  </video>
+						  <a href="#" ng-click="goToCharacterPage()" >
+							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+							</i>
+							</a>
+						  <!--<a href="#" ng-click="goToCharacterPage()" >
+							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+							</i>
+							</a>-->
+						</div>
+					<!--	<img class="img-responsive" src='./untitled.png'>-->
+					 
+						<img > <!-- random image -->
+						<div  ng-if="infoSlide2"class=" center-align">
+						  <h2 style="font-family:'Oswald' !important;" class="animated fadeIn">EARN WHILE YOU PLAY</h2>
+						  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">Make Money Doing What You love! What More Can You Ask For?</h5>
+						 <br> 
+						  <video width="100%" playsinline autoplay muted loop controls>
+							<source src="./utility.mp4" type="video/mp4">
+							
+							Your browser does not support the video tag.
+						  </video>
+						  <a href="#" ng-click="goToCharacterPage()" >
+							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+							</i>
+							</a>
+						</div>
+						<br>
+					<br>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col s6 center-align">
+							<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 
-					 </li>
-					 <li>
+						</div>
+						<div class="col s6 center-align">
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 
+						</div>
+						</div>
+				  </div>
+			  </div>
+			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+				<div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+				
+					 <!-- random image -->
+						<div  ng-if="characterSlide1"class=" center-align" style="border:2px solid white;">
+						  <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
+						  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
+						  <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald' !important; font-size:16px">( SWIPE TO SCROLL )</h5>
+					 <!--  <img class="img-responsive" style="position:absolute:top:0;" src='./zz.png'>-->
+					  
+							
+					   <div class="col s12">
+						<a href="#" ng-click="goToNftpage()">
+							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+							</i>
+					</a>
+					  </div>
+							
+							</div>
+					 
+					  
+					
+	
 						<!-- random image -->
-						   <div class="caption center-align" style="border:2px solid white;">
-							 <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
+						   <div ng-if="characterSlide2"c class=" center-align" style="border:2px solid white;">
+							 <h1 style="font-family:'Oswald'" class="animated fadeIn">RAED</h1>
 							 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
 							 <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald'; font-size:16px">( SWIPE TO SCROLL )</h5>
 	
+							<!--s <img class="img-responsive" src='./rshad.png'>-->
 							
-							 <img class="img-responsive" src='./steel.png'>
-							 
+	
 							 <div class="col s12">
 								<a href="#" ng-click="goToNftPage()"  >
 									<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 									</i>
 									</a>
 							  </div>
-						   </div>
-						 </li>
-						 
-				</ul>
-			  </div>
-			  
-			  <div class="col s12" id="nft" style= "background-color:transparent; border:2px solid white; background-image:url('./joj-01.jpg')">
-				<ul class="slides" style="background-color:transparent;">
-					<li>
-						<img > <!-- random image -->
-						<div class="caption center-align">
-						  <h1 style="font-family:'Oswald'" class="animated fadeIn">NFT ASSETS</h1>
-						  <p style="font-family:'Oswald'; font-size:20px;" class="light grey-text text-lighten-3">Using our NFTs exclusively, players engage in adventurous games and compete against each other while earning tokens. Users can purchase virtual land in our Meta world and get the chance to watch cartoons in an augmented landscape.</p>
-						 <br>
-						  <video width="100%" playsinline autoplay muted loop controls>
-							<source src="./56.mp4" type="video/mp4">
-							
-							Your browser does not support the video tag.
-						  </video>
-						  <a href="#" ng-click="goToContactPage()" >
-							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-							</i>
-							</a>
+	
+						
+						
+						
+						
 						</div>
-						<img class="img-responsive" src='./untitled.png'>
-					  </li>
-			
-				</ul>
+						
+	
+						
+	
+							<!-- random image -->
+							   <div ng-if="characterSlide3" class="caption center-align" style="border:2px solid white;">
+								 <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
+								 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
+								 <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald'; font-size:16px">( SWIPE TO SCROLL )</h5>
+		
+								
+								 
+								 <div class="col s12">
+									<a href="#" ng-click="goToNftPage()"  >
+										<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+										</i>
+										</a>
+								  </div>
+							   </div>
+
+							   <div class="row">
+								<div class="col s4 center-align">
+									<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+		
+								</div>
+								<div class="col s4 center-align">
+									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+		
+								</div>
+								<div class="col s4 center-align">
+									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+		
+								</div>
+								</div>
+					
+				  </div>
 			  </div>
-
-
-
-			  <div class="col s12" id="contact" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png')">
-				<ul class="slides" style="background-color:transparent;">
-				  <li>
-					<img > <!-- random image -->
-					<div class="caption center-align" style="border:2px solid white;">
-						<br>
-						<br>
-						<br>
-					  <h1 style="font-family:'Oswald'" class="animated fadeIn">Get In Touch!</h1>
-					  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
-					
-					
-					  <div class="col s4">
-						<br>
-						<br>
-						<br>
-					
-						  
-						<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
-					</div>
-						<div class="col s4">
+			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+				<div class="col s12" id="nft" style= "background-color:transparent; border:2px solid white; background-image:url('./joj-01.jpg')">
+				
+							<div class="caption center-align">
+							  <h1 style="font-family:'Oswald'" class="animated fadeIn">NFT ASSETS</h1>
+							  <p style="font-family:'Oswald'; font-size:20px;" class="light grey-text text-lighten-3">Using our NFTs exclusively, players engage in adventurous games and compete against each other while earning tokens. Users can purchase virtual land in our Meta world and get the chance to watch cartoons in an augmented landscape.</p>
+							 <br>
+							  <video width="100%" playsinline autoplay muted loop controls>
+								<source src="./56.mp4" type="video/mp4">
+								
+								Your browser does not support the video tag.
+							  </video>
+							  <a href="#" ng-click="goToContactPage()" >
+								<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+								</i>
+								</a>
+							</div>
+				
+				  </div>
+			  </div>
+			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+				<div class="col s12" id="contact" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png')">
+				-- random image -->
+						<div class="caption center-align" style="border:2px solid white;">
+							<br>
+							<br>
+							<br>
+						  <h1 style="font-family:'Oswald'" class="animated fadeIn">Get In Touch!</h1>
+						  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
+						
+						
+						  <div class="col s4">
 							<br>
 							<br>
 							<br>
@@ -1342,25 +1354,34 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<div class="col s4">
 								<br>
 								<br>
-								
-						<br>
+								<br>
+							
+								  
 								<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
 							</div>
-					 <div class="col s12">
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-					 </div>
-			
-				  </li>
-			
-				</ul>
+								<div class="col s4">
+									<br>
+									<br>
+									
+							<br>
+									<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
+								</div>
+						 <div class="col s12">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+						 </div>
+				
+					
+				  </div>
+	
 			  </div>
+	
 				  
 
 

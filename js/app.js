@@ -36,6 +36,48 @@
         $scope.homeSlide3          = false;
         $scope.audioOnIcon            = false;
         $scope.audioOffIcon            = true;
+        $scope.infoSlide1       = true;
+        $scope.infoSlide2   = false;
+
+        $scope.openInfoSlide1 = function(){
+
+            $scope.infoSlide2 = false;;
+            $scope.infoSlide1 = true
+
+        }
+        $scope.openInfoSlide2 = function(){
+
+            $scope.infoSlide1 = false;;
+            $scope.infoSlide2 = true
+
+        }
+        $scope.openCharacterSlide1 = function(){
+
+            $scope.characterSlide1 = true;
+            $scope.characterSlide2 = false;
+            $scope.characterSlide3 = false;
+
+
+        }
+        $scope.characterSlide1 = true;
+        $scope.characterSlide2 = false;
+        $scope.characterSlide3 = false;
+        $scope.openCharacterSlide3 = function(){
+
+            $scope.characterSlide3 = true;
+            $scope.characterSlide1 = false;
+            $scope.characterSlide2 = false;
+            
+
+        }        
+        $scope.openCharacterSlide2= function(){
+
+            $scope.characterSlide2 = true;
+            $scope.characterSlide1 = false;
+            $scope.characterSlide3 = false;
+            
+
+        }
         $scope.audio                = new Audio('../term.mp3')
         $scope.audio.addEventListener('ended', function() {
             this.currentTime = 0;
