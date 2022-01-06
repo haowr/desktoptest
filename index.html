@@ -203,42 +203,96 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
   min-height: 100%;
 }
 </style>
-<div class="navbar-fixed black" style=" box-shadow:4px 4px 4px black; background-image:url('./bckrndblur.png')">
-  <nav class=" " style="  background-image:url('./bckrndblur.png')">
-    <div class="">
-		<!--<a href="#/" class="brand-logo left">Logo</a>-->
-		<a href="#/" ng-click="goToHome()">  <img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" /></a>
 
-	  <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a ng-click="goToHome()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >HOME</a></li>
-        <li><a ng-click="clickTest()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >INFO</a></li>
-        <li><a ng-click="goToFourthDiv()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >CHARACTERS</a></li>
-		<li><a ng-click="goToNftPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >NFT</li>
 
-      </ul>
-     <!--- <ul class="right" ng-click="openMenu()">
-      
-        <li><i class="material-icons right" style="font-size:60px; " ng-class="{'openmenu':menuOpen,'menuclose':!menuOpen}">dehaze</i></li>
-      </ul>-->
-    </div>
-  </nav>
+<div class="navbar-fixed black hide-on-med-and-up" style=" z-index:500000;height:80px; box-shadow:4px solid black; background-image:url('./bckrndblur.png')">
+	<nav class=" " style="  background-image:url('./bckrndblur.png')">
+	  <div class="nav-wrapper">
+		  <!--<a href="#" class="brand-logo left">Logo</a>-->
+		<img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" />
+  
+	 
+		<ul class="right" ng-click="openMenu()">
+		
+		  <li><i class="material-icons right" style="font-size:60px; " ng-class="{'openmenu':menuOpen,'menuclose':!menuOpen}">dehaze</i></li>
+		</ul>
+	  </div>
+	</nav>
+  </div>
+  <div class="navbar-fixed black hide-on-small-only" style=" z-index:50000; box-shadow:4px 4px 4px black; background-image:url('./bckrndblur.png')">
+	<nav class=" " style="  background-image:url('./bckrndblur.png')">
+	  <div class="">
+		  <!--<a href="#/" class="brand-logo left">Logo</a>-->
+		  <a href="#/" ng-click="goToHome()">  <img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" /></a>
+  
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+		  <li><a ng-click="goToHome()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >HOME</a></li>
+		  <li><a ng-click="clickTest()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >INFO</a></li>
+		  <li><a ng-click="goToFourthDiv()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >CHARACTERS</a></li>
+		  <li><a ng-click="goToNftPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >NFT</li>
+  
+		</ul>
+	   <!--- <ul class="right" ng-click="openMenu()">
+		
+		  <li><i class="material-icons right" style="font-size:60px; " ng-class="{'openmenu':menuOpen,'menuclose':!menuOpen}">dehaze</i></li>
+		</ul>-->
+	  </div>
+	</nav>
+  </div>
+<div class="menufixed" ng-class="{'menularge':menuOpen,'menulist': !menuOpen}">
+
+
+	<div ng-if="!menuListClosed" class=" animated " ng-class="{'fadeIn':menuItemsOn,'fast':menuItemsOn, }" style="position:absolute; z-index:1000;">
+		<div class="row">
+				
+			
+			<div class="row"></div>
+			<div class="row"></div>
+<br>
+<br>
+			<ul>
+				<li><h3 ng-class="{'menu1':menu1}" ng-click="goToHome()" class="white-text"style="font-family:'Oswald'; font-size:40px;">HOME</h3></li>
+				<li><h3 ng-class="{'menu1':menu2}"  ng-click="openInfoPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">INFO</h3></li>
+
+				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToCharacterPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">CHARACTERS</h3></li>
+				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToNftPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">NFT</h3></li>
+
+				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToContactPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">CONTACT</h3></li>
+
+				</ul>
+		
+	
+		</div>
+		</div>
+			<div class="row">
+		
 </div>
+<div class="row">
+	
+		</div>
 
+
+			</div>
 <a ng-if="audioOffIcon"ng-click="playAudio()" href="#/">
-<i style="position:fixed; top:20; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_off</i>
+<i style="position:fixed; top:60px; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_off</i>
 </a>
 <a ng-if="audioOnIcon"   ng-click="stopAudio()" href="#/">
-	<i style="position:fixed; top:20; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_up</i>
+	<i style="position:fixed; top:60px; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_up</i>
 	</a>
 <body   >
   
 
 	<div  class="hide-on-small-only ">
+
+
 		<div id="goToHome" class="row" style="background-image:url('./BBBCKRNDLESS.png');background-repeat:no-repeat;background-size:cover;
 		background-position:center;">
-	
-	
+		<div class='row'></div>
+		<div class='row'></div>
 		
+		<div class='row'></div>
+	
+	<div class="row" style="border:2px solid white;">
 			<div ng-if="homeSlide1"  class="col s6 right-align">
 			
 				<img class="responsive-img" src="./untitled.png" style="height:600px; ">
@@ -322,11 +376,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 									<div class="col s4 center-align">
 										<div class="row">
 											<div class="col s6">
-												<a href="javascript:void(0)" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
+												<a href="javascript:void(0)" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 											</div>
 											<div class="col s6">
-												<a href="javascript:void(0)" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_7_5</i></a>
+												<a href="javascript:void(0)" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 											</div>
 											</div>
@@ -366,6 +420,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						  
 				</div>
 			</div>
+
+			</div>
 		</div>
 	
 			<div class="row">
@@ -383,7 +439,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		
 	
 		<div class="row"  style="background-image:url('');background-repeat:no-repeat;background-size:cover;
-		background-position:center;">
+		background-position:center;border:2px solid white;"">
 	
 			<div class="col s1"></div>
 	
@@ -507,8 +563,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<br>
 				<br>
 				<br>
-				<br>
-				<br>
+				
 				<video width="100%" playsinline autoplay muted loop controls style="border:2px solid white; box-shadow:2px 2px 2px black;">
 					<source src="./utility.mp4" type="video/mp4">
 				</video>
@@ -524,8 +579,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<br>
 					<br>
 					<br>
-					<br>
-					<br>
+					
 					<video width="100%" playsinline autoplay muted loop controls style="border:2px solid white;">
 						<source src="./tst.mp4" type="video/mp4">
 					</video>
@@ -540,11 +594,15 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	</div>
 	
-	
-	<div id="thirdDiv" style="border:5px solid transparent;">
+	<div class='row'></div>
+	<div id="thirdDiv"  style="background-image:url('characterbackground.png');background-repeat:no-repeat;background-size:cover;
+	background-position:center; ">
 	
 		<div class='row'></div>
-
+		<div class='row'></div>
+		<div class='row'></div>
+		
+		
 		
 	
 		
@@ -553,8 +611,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		
 		
 	
-		<div class="row"  style="background-image:url('characterbackground.png');background-repeat:no-repeat;background-size:cover;
-		background-position:center; border:2px solid white;">
+		<div class="row"  style=" border:2px solid white;">
 	
 			<div class="col s1"></div>
 	
@@ -571,8 +628,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		
 			<div ng-if="characterSlider1">
 	
-				<h1 class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
-				<h1 class="animated  white-text" style="font-family:'Oswald';">THE LITTLE DEMON</h1>
+				<h1 id="zizu" class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
+				<h1 id="demon" class="animated  white-text" style="font-family:'Oswald';">THE LITTLE DEMON</h1>
 				<div class="col s12" style="border:2px solid white;"></div>
 				<br>
 				<h4 class="white-text animated flash "style="font-family:'Oswald';">Fast. Nimble. Powerful.</h4>
@@ -584,8 +641,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 			<div ng-if="characterSlider2">
 	
-				<h1 class="animated  white-text" style="font-family:'Oswald';">Raed</h1>
-				<h1 class="animated  white-text" style="font-family:'Oswald';">THE HORNED BULL</h1>
+				<h1 id="raed" class="animated  white-text" style="font-family:'Oswald';">Raed</h1>
+				<h1 id="raed"class="animated  white-text" style="font-family:'Oswald';">THE HORNED BULL</h1>
 				<div class="col s12" style="border:2px solid white;"></div>
 				<br>
 				<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
@@ -598,8 +655,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 			<div ng-if="characterSlider3">
 	
-				<h1 class="animated  white-text" style="font-family:'Oswald';">STEELZ</h1>
-				<h1 class="animated  white-text" style="font-family:'Oswald';">THE SENTINAL</h1>
+				<h1 id="steelz" class="animated  white-text" style="font-family:'Oswald';">STEELZ</h1>
+				<h1 id="steelz"class="animated  white-text" style="font-family:'Oswald';">THE SENTINAL</h1>
 				<div class="col s12" style="border:2px solid white;"></div>
 				<br>
 				<h4 class="white-text animated flash "style="font-family:'Oswald';">Dependable. Unrelenting.</h4>
@@ -615,7 +672,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	
 		 
-						<div class="col s4 center-align" style="box-shadow:2px 2px 2px black;">
+						<div class="col s4 center-align" >
 							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 						</div>
 						<div class="col s4 center-align">
@@ -726,18 +783,21 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	
 	</div>
-	
-	<div id="nft" style="border:5px solid transparent;">
+	<div class='row'></div>
+	<div id="nft"  style="background-image:url('joj-01.png');background-repeat:no-repeat;background-size:cover;
+	background-position:center;">
 	
 
 		
 		
 		
-		
+	<div class='row'></div>
+	<div class='row'></div>
+	
+	<div class='row'></div>
 		
 	
-		<div class="row"  style="background-image:url('joj-01.png');background-repeat:no-repeat;background-size:cover;
-		background-position:center;">
+		<div class="row" style="border:2px solid white;" >
 	
 			<div class="col s1"></div>
 	
@@ -798,8 +858,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<div class="col s6">
 							
 								
-								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
-								<img src="./fg-01.png" class="responsive-img">
+								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">In-game rewards Earn exclusive NFTs, Virtual land, and new breed characters</p>
+								<br>
+								<img src="./w-01.png" class="responsive-img" style="height:80px; width:80px;">
 
 									<div class="row"></div>
 									<div class="row" style="">
@@ -817,8 +878,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								<div class="col s6">
 							
 								
-									<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
-									<img src="./fg-01.png" class="responsive-img">
+									<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earning $HONEY Our in-game token that is issued for participation an any activity</p>
+									<img src="./zz-01.png" class="responsive-img">
 
 										<div class="row"></div>
 										<div class="row" style="">
@@ -926,7 +987,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	
 	
-				<div class="row"  style=" background-size: cover;">
+				<div class="row"  style=" background-size: cover; border:2px solid white;"">
 					<div class="col s2"></div>
 					<div class="col s8">
 						<div class="row">
@@ -968,7 +1029,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					</div>
 					<div class="row">
 			
-						<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">GET IN TOUCH!</h1>
+						<h1 id="getintouch" class="animated fadeIn white-text" style="font-family:'Oswald';">GET IN TOUCH!</h1>
 		
 							</p>
 					</div>
@@ -1313,17 +1374,42 @@ $('.scrollspy').scrollSpy({
    
 });
 
-$(window).scroll(function() {    
-	if (scroll >= 500) {
+$(window).scroll(function() {  
+	
+	console.log($(window).scrollTop())
+	if ($(window).scrollTop() >= 700) {
         //clearHeader, not clearheader - caps H
-        $("#earnwhileyouplay").addClass("fadeIn");
+		console.log(scroll)  
+        $("#earnwhileyouplay").addClass("fadeInLeft");
     }else{
-        $("#earnwhileyouplay").removeClass("fadeIn");
+        $("#earnwhileyouplay").removeClass("fadeInLeft");
 
     }
-    if (scroll === 0) {
+	if ($(window).scrollTop() >= 1300) {
         //clearHeader, not clearheader - caps H
-        $("#canyouescape").addClass("fadeIn");
+		console.log(scroll)  
+       
+		$("#demon").addClass("fadeInLeft");
+		$("#zizu").addClass("fadeInLeft");
+    }else{
+		$("#demon").removeClass("fadeInLeft");
+		$("#zizu").removeClass("fadeInLeft");
+
+    }
+	if ($(window).scrollTop() >= 3127) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+        $("#getintouch").addClass("fadeInLeft");
+	
+    }else{
+		$("#getintouch").removeClass("fadeInLeft");
+
+
+    }
+    if ($(window).scrollTop() === 0) {
+		console.log(scroll)  
+        //clearHeader, not clearheader - caps H
+        $("#canyouescape").addClass("fadeInRight");
         $("#beansmeta").addClass("fadeIn");
 
     }else{

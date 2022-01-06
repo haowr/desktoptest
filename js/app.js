@@ -166,6 +166,8 @@
            // $scope.bgaudio.play()
 
         }
+
+  
         $scope.openMenu1 = function(){
             console.log("menu1")
             $scope.audio.play()
