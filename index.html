@@ -229,16 +229,16 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 <i style="position:fixed; top:20; right:0; color:white; font-size:30px; padding-right:12px; z-index:100000;"class="material-icons">volume_up</i>
 </a>
 
-<body class="show-on-small">
+<body class="hide-on-med-and-up" >
   
 	
 	<!--
-	<a href="#/" ng-click="clickTest()"  style="z-index:100; position:fixed; top: 30;">
+	<a href="#" ng-click="clickTest()"  style="z-index:100; position:fixed; top: 30;">
     <i style="position:absolute;top:50vh; left:35vw;font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
     </i>
     </a>-->
 
-		<div class="row hide-on-med-and-up">
+		<div class="row">
 		
 			<div class="slider section scrollspy" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.png')">
 				<ul class="slides" style="background-color:transparent; ">
@@ -247,7 +247,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				
 					<div class="caption center-align" style="border:2px solid white;">
 					<h2 class="animated flash" style="font-family:'shem' !important;">Can You Escape?</h2>
-					<h4 class="animated flash infinite slow" style="font-family:'shem' !important;">THE META FACTORY?</h4>
+					<h3 style="font-family:'shem' !important;"">THE META FACTORY?</h3>
 					
 					<a class="blue-grey lighten-2 btn" target="_blank"href="https://www.youtube.com/watch?v=bwUlP_Oeq94&ab_channel=UFOGamingOfficial"><i class="material-icons left">play_arrow</i>WATCH TRAILER</a>
 
@@ -260,7 +260,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				
 					<div class="caption center-align" style="border:2px solid white;">
 					<h2 style="font-family:'shem' !important;">Join The Crew</h2>
-					<h5 class="animated flash infinite slow" style="font-family:'shem' !important;">Sign-Up Today For Access To The Beta</h5>
+					<h3 style="font-family:'shem' !important;">Sign-Up Today For Access To The Beta</h3>
 					
 					<a class="blue-grey lighten-2 btn"><i class="material-icons left">face</i>Sign-Up!</a>
 
@@ -277,15 +277,19 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				  <li>
 					<img > <!-- random image -->
 					<div class="caption center-align">
-					  <h2 style="font-family:'shem' !important;"class="">An Endless Adventure</h2>
-					  <h5 class="light grey-text text-lighten-3 animated flash infinite slow" style="font-family:'shem' !important;">New Challenging Locations...More Rewards To Unlock!</h5>
+					  <h2 style="font-family:'shem' !important;"class="animated flash infinite">An Endless Adventure</h2>
+					  <h5 class="light grey-text text-lighten-3" style="font-family:'shem' !important;">New Challenging Locations...More Rewards To Unlock!</h5>
 					 <br> 
-
-					  <a href="#/" ng-click="goToCharacterPage()" >
+					  <video width="100%" playsinline autoplay muted loop controls>
+						<source src="./tst.mp4" type="video/mp4">
+						
+						Your browser does not support the video tag.
+					  </video>
+					  <a href="#" ng-click="goToCharacterPage()" >
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
 						</a>
-					  <!--<a href="#/" ng-click="goToCharacterPage()" >
+					  <!--<a href="#" ng-click="goToCharacterPage()" >
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
 						</a>-->
@@ -296,14 +300,14 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<img > <!-- random image -->
 					<div class="caption center-align">
 					  <h2 style="font-family:'shem' !important;" class="animated fadeIn">EARN WHILE YOU PLAY</h2>
-					  <h5 class="light grey-text text-lighten-3 animated flash infinite slow" style="font-family:'shem' !important;">Make Money Doing What You love! What More Can You Ask For?</h5>
+					  <h5 class="light grey-text text-lighten-3" style="font-family:'shem' !important;">Make Money Doing What You love! What More Can You Ask For?</h5>
 					 <br> 
 					  <video width="100%" playsinline autoplay muted loop controls>
 						<source src="./raed.mp4" type="video/mp4">
 						
 						Your browser does not support the video tag.
 					  </video>
-					  <a href="#/" ng-click="goToCharacterPage()" >
+					  <a href="#" ng-click="goToCharacterPage()" >
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
 						</a>
@@ -315,20 +319,20 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			  </div>
 
 
-			  <div  id="characters" style= "">
-				<ul class="" style="background-color:transparent;">
+			  <div class="slider" id="characters" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.png')">
+				<ul class="slides" style="background-color:transparent;">
 				  <li>
 
 				 <!-- random image -->
-					<div class=" center-align" style="border:2px solid white;">
+					<div class="caption center-align" style="border:2px solid white;">
 					  <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
 					  <h5 class="light grey-text text-lighten-3" style="font-family:'shem' !important;">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
-					  <h5 class="light grey-text text-lighten-3 animated flash "  style="font-family:'shem' !important; font-size:16px">( SWIPE TO SCROLL )</h5>
-				   <img class="img-responsive" style="position:absolute;top:0;" src='./zz.png'>
+					  <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'shem' !important; font-size:16px">( SWIPE TO SCROLL )</h5>
+				   <img class="img-responsive" style="position:absolute:top:0;" src='./zz.png'>
 				  
 						
 				   <div class="col s12">
-					<a href="#/" ng-click="goToNftpage()">
+					<a href="#" ng-click="goToNftpage()">
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
 				</a>
@@ -341,7 +345,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				  <li>
 
 					<!-- random image -->
-					   <div class=" center-align" style="border:2px solid white;">
+					   <div class="caption center-align" style="border:2px solid white;">
 						 <h1 style="font-family:'Oswald'" class="animated fadeIn">RAED</h1>
 						 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
 						 <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald'; font-size:16px">( SWIPE TO SCROLL )</h5>
@@ -350,7 +354,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						
 
 						 <div class="col s12">
-							<a href="#/" ng-click="goToNftPage()"  >
+							<a href="#" ng-click="goToNftPage()"  >
 								<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 								</i>
 								</a>
@@ -376,7 +380,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							 <img class="img-responsive" src='./steel.png'>
 							 
 							 <div class="col s12">
-								<a href="#/" ng-click="goToNftPage()"  >
+								<a href="#" ng-click="goToNftPage()"  >
 									<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 									</i>
 									</a>
@@ -400,7 +404,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							
 							Your browser does not support the video tag.
 						  </video>
-						  <a href="#/" ng-click="goToContactPage()" >
+						  <a href="#" ng-click="goToContactPage()" >
 							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 							</i>
 							</a>
@@ -421,7 +425,6 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						<br>
 						<br>
 						<br>
-						
 					  <h1 style="font-family:'Oswald'" class="animated fadeIn">Get In Touch!</h1>
 					  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
 					
