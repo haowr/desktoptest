@@ -229,7 +229,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		  <li><a ng-click="goToHome()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >HOME</a></li>
 		  <li><a ng-click="clickTest()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >INFO</a></li>
 		  <li><a ng-click="goToFourthDiv()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >CHARACTERS</a></li>
-		  <li><a ng-click="goToNftPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >NFT</li>
+		  <li><a ng-click="goToNftPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >NFT</a></li>
+			<li><a ng-click="goToContactPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >CONTACT</a></li>
+
   
 		</ul>
 	   <!--- <ul class="right" ng-click="openMenu()">
@@ -830,7 +832,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		<div class="col s6 center-align " >
 		
 			
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
+			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'; text-decoration:underline;">Earn $BEANS tokens (which has governance rights) through quests completion and pvp battles</p>
 	<img src="./fg-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 				<div class="row"></div>
 				<div class="row" style="">
@@ -848,7 +850,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			<div class="col s6 center-align">
 		
 			
-				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans CartoonsThe story of beans starts in an abandoned robot factory in Meta City. </p>
+				<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald';text-decoration:underline;">Big Beans CartoonsThe story of beans starts in an abandoned robot factory in Meta City. </p>
 				<img src="./d-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 
 					<div class="row"></div>
@@ -872,7 +874,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<div class="col s6 center-align">
 							
 								
-								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">In-game rewards Earn exclusive NFTs, Virtual land, and new breed characters</p>
+								<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald';text-decoration:underline;">In-game rewards Earn exclusive NFTs, Virtual land, and new breed characters</p>
 								<br>
 								<img src="./w-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 
@@ -892,7 +894,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								<div class="col s6 center-align">
 							
 								
-									<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Earning $HONEY Our in-game token that is issued for participation an any activity</p>
+									<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald';text-decoration:underline;">Earning $HONEY Our in-game token that is issued for participation an any activity</p>
 									<img src="./zz-01.png" class="responsive-img center-align" style="height:100px; width:100px;">
 
 										<div class="row"></div>
@@ -1044,8 +1046,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					</div>
 					<div class="row">
 			
-						<h1 id="getintouch" class="animated fadeIn white-text" style="font-family:'Oswald';">GET IN TOUCH!</h1>
-						<h4 id="getintouch" class="animated fadeIn white-text" style="font-family:'Oswald';">Join Our Growing Community!</h4>
+						<h1 id="getintouch" class="animated  white-text" style="font-family:'Oswald';">GET IN TOUCH!</h1>
+						<h4 id="growingcommunity" class="animated  white-text" style="font-family:'Oswald';">Join Our Growing Community!</h4>
 
 		<div class="col s12" style="border:2px solid white"></div>
 							</p>
@@ -1426,13 +1428,17 @@ $(window).scroll(function() {
 		$("#own").removeClass("fadeInRight");
 
     }
-	if ($(window).scrollTop() >= 3127) {
+	if ($(window).scrollTop() === 3075) {
         //clearHeader, not clearheader - caps H
 		console.log(scroll)  
-        $("#getintouch").addClass("fadeInLeft");
+        $("#getintouch").addClass("flash ");
+		$("#growingcommunity").addClass("flash ");
+
 	
     }else{
-		$("#getintouch").removeClass("fadeInLeft");
+		$("#growingcommunity").removeClass("flash ");
+		$("#getintouch").removeClass("flash ");
+
 
 
     }
