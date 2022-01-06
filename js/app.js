@@ -245,7 +245,7 @@
 
             console.log("clicked")
             $('html, body').animate({
-                scrollTop: $("#firstDiv").offset().top-120
+                scrollTop: $("#firstDiv").offset().top+25
             }, 1000);
         }
         $scope.goToCharacterPage= function(){
