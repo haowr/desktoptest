@@ -224,6 +224,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
     </div>
   </nav>
 </div>
+<i ng-click="playAudio()"style="position:fixed; top:17; right:0; color:white; font-size:30px; padding-right:12px;"class="material-icons">volume_up</i>
 
 <!--
 <div class="menufixed" ng-class="{'menularge':menuOpen,'menulist': !menuOpen}">
@@ -274,14 +275,14 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 
 	
-		<div class="col s4 right-align">
+		<div class="col s6 right-align">
 			<br>
 			<br>
 			<br>
 			<img class="responsive-img" style="width:700px; height:500px;" src="./untitled.png">
 
 		</div>
-		<div class="col s8">
+		<div class="col s6">
 			<div class="row">
 	
 			
@@ -298,8 +299,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<div ng-if="homeSlide1" class="left-align">
 	<br>
 
-						<h2 id="canyouescape" class="animated fadeInLeft white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h2>
-						<h2 id="beansmeta" class="animated fadeInRight white-text" style="font-family:'Oswald';">BEANS META?</h2>
+						<h2 id="canyouescape" class="animated white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h2>
+						<h2 id="beansmeta" class="animated  white-text" style="font-family:'Oswald';">BEANS META?</h2>
 						<div class="col s12" style="border:2px solid white;"></div>
 						<br>
 						<h4 class="white-text animated flash "style="font-family:'Oswald';">Watch The Trailer!</h4>
@@ -394,7 +395,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 		<div class="row">
 			
-<div id="firstDiv" style="background-image:url('./earnbackground.png');border:5px solid transparent;">
+<div id="firstDiv" style="background-image:url('./earnbackground.png');background-position:center;border:5px solid transparent;">
 
 	<div class='row'></div>
 	<div class='row'></div>
@@ -429,16 +430,16 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			<h5 class="white-text animated flash "style="font-family:'Oswald';">A revolutionary gaming token with an innovative buy-back system on BSC</h5>
 
 			<div class="col s12" style="border:2px solid white;"></div>
-	<br>
-			<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat tortor faucibus tortor suscipit porttitor. 
 
-			<!--<a class="waves-effect waves-light btn animated flash " ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>-->
-			<br>
-			<br>
-				<video width="100%" playsinline autoplay muted loop controls>
-					<source src="./raed.mp4" type="video/mp4">
-				</video>
-			 </p>
+			<div class="row">
+				<div class="col s10">
+	<br>
+	<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+		<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
+		</div>
+		<div class="col s2"></div>
+		</div>
+		
 		</div>
 
 		<div ng-if="infoSlider2">
@@ -507,54 +508,29 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				
 				
 				<div ng-if="infoSlider1" class="col s6 animated fadeIn" >
-					<br>
-					<br></br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-				
+			
 				</div>
 				<div ng-if="infoSlider2" class="col s6 animated fadeIn" >
-					<br>
-					<br></br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+					
 					<br>
 				
 				</div>
 				<div ng-if="infoSlider3" class="col s6 animated fadeIn" >
-					<br>
-					<br></br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+		
 					
 				</div>
 					  
 			</div>
 		</div>
-		<div class="col s5">
-			<h4 class="white-text"style="font-family:'Oswald';">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.
-				Big Beans will be one of the first NFT driven P2E gaming platforms on the Binance Smart Chain. Big Beans is a multiplayer role-playing game centred around the Beans NFT collection. In the game, players farm, compete and breed with one another to earn $BEANS tokens.</h4>
-		</div>
+		<div class="col s5 center-align">
+			<br>
+			<br>
+			<br>
+			<br>
+			<video width="100%" playsinline autoplay muted loop controls>
+				<source src="./raed.mp4" type="video/mp4">
+			</video>
+			</div>
 		<div class="col s1"></div>
 
 		</div>
@@ -688,10 +664,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<br>
 					<br>
 					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+				
+				
 					<img src="./12.gif" class="responsive-img">
 				</div>
 				<div ng-if="characterSlider2" class="col s6 animated fadeIn" >
@@ -702,10 +676,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<br>
 					<br>
 					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+				
+					
 					<img src="./11.gif" class="responsive-img">
 				</div>
 				<div ng-if="characterSlider3" class="col s6 animated fadeIn" >
@@ -716,10 +688,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<br>
 					<br>
 					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+					
+					
 					<img src="./8.gif" class="responsive-img">
 				</div>
 					  
@@ -759,8 +729,18 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			
 
 				<div class="col s6">
+<div class="row"></div>
+<div class="row"></div>
 
-					<div class="row">
+<div class="row"></div>
+
+<div class="row"></div>
+<div class="row"></div>
+
+<div class="row"></div>
+
+<div class="row"></div>
+					<div class="row left-align">
 				
 				
 	<div class="col s6">
@@ -801,7 +781,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			</div>
 					</div>
 	
-					<div class="row">
+					<div class="row left-align">
 				
 				
 						<div class="col s6">
@@ -1326,27 +1306,24 @@ $('.scrollspy').scrollSpy({
 });
 
 $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
- console.log("scroll", scroll)
-     //>=, not <=
-    if (scroll >= 500) {
+	if (scroll >= 500) {
         //clearHeader, not clearheader - caps H
-        $("#earnwhileyouplay").addClass("fadeInLeft");
+        $("#earnwhileyouplay").addClass("fadeIn");
     }else{
-		$("#earnwhileyouplay").removeClass("fadeInLeft");
+        $("#earnwhileyouplay").removeClass("fadeIn");
 
-	}
+    }
     if (scroll === 0) {
         //clearHeader, not clearheader - caps H
-        $("#canyouescape").addClass("fadeInLeft");
-        $("#beansmeta").addClass("fadeInRight");
+        $("#canyouescape").addClass("fadeIn");
+        $("#beansmeta").addClass("fadeIn");
 
     }else{
-		$("#canyouescape").removeClass("fadeInLeft");
-        $("#beansmeta").removeClass("fadeInRight");
+        $("#canyouescape").removeClass("fadeIn");
+        $("#beansmeta").removeClass("fadeIn");
 
 
-	}
+    }
 
 }); //missing );
 </script>

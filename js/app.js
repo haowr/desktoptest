@@ -41,6 +41,11 @@
         $scope.chararcterSlider2 = false;
         $scope.characterSlider3 = false;
         $scope.audio.play()
+        $scope.playAudio = function(){
+
+            $scope.audio.play()
+
+        }
         $scope.openCharacterSlider1 = function(){
             console.log("clicked")
 
