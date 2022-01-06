@@ -41,6 +41,12 @@
         $scope.chararcterSlider2 = false;
         $scope.characterSlider3 = false;
    
+        $scope.playAudio = function(){
+
+            $scope.audio.play()
+
+        }
+
         $scope.openCharacterSlider1 = function(){
             console.log("clicked")
 
@@ -325,8 +331,6 @@
 
         }
           $scope.goToHome = function(){
-
-            console.log("go to home")
  $('html, body').animate({
                 scrollTop: $("#goToHome").offset().top-100 
             },500); 
