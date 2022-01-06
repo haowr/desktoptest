@@ -287,7 +287,7 @@
    $scope.goToFourthDiv= function(){
     console.log("clicked")
        $('html, body').animate({
-           scrollTop: $("#thirdDiv").offset().top
+           scrollTop: $("#thirdDiv").offset().top-30
        }, 1000);
        $scope.menuOpen = false;
        $scope.menuListClosed = true;
