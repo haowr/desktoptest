@@ -212,14 +212,14 @@
   
         $scope.openMenu1 = function(){
             console.log("menu1")
-            $scope.audio.play()
+           // $scope.audio.play()
             $scope.menu1 = true;
             $scope.menu2 = false;;
             $scope.menu3 = false;
         }
         $scope.openMenu2 = function(){
 
-            $scope.audio.play()
+           // $scope.audio.play()
             $scope.menu2 = true;
             $scope.menu1 = false;
             $scope.menu3 = false;
@@ -228,7 +228,7 @@
         
         $scope.openMenu3 = function(){
 
-            $scope.audio.play()
+          //  $scope.audio.play()
             $scope.menu2 = false;
             $scope.menu1 = false;
             $scope.menu3 = true;
@@ -281,7 +281,7 @@
             }else{
                 var scope = $scope;
                 
-                $scope.audio.play()
+               // $scope.audio.play()
                 $scope.menuItemsOn = false;
                 $scope.menuListClosed = true;
 
