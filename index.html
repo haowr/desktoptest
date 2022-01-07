@@ -367,15 +367,6 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		
 						</div>
 		
-						<div ng-if="homeSlide3">
-		
-							<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h1>
-							<h1 class="animated fadeIn white-text" style="font-family:'Oswald';">BEANS META?</h1>
-							<br>
-							<h4 class="white-text animated flash "style="font-family:'Oswald';">WILL YOU JOIN THE P2E REVOLUTION?</h4>
-							<a class="waves-effect waves-light btn" ><i class="material-icons right">chevron_right</i>SIGN-UP!</a>
-		
-						</div>
 		
 							<div class="row"></div>
 							<div class="row">
@@ -1160,7 +1151,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						<h3 style="font-family:'Oswald' ">Sign-Up Today For Access To The Beta</h3>
 						
 						<a class="blue-grey lighten-2 btn"><i class="material-icons left">face</i>Sign-Up!</a>
-	
+	<br>
 							<img class="responsive-img"  src='./logotrans.gif'>
 						</div>
 					<br>
@@ -1188,9 +1179,10 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div  class="col s12" id="infopage" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')" id="myDiv">
 				
+					<div class="row"></div>
 						<img > <!-- random image -->
 						<div ng-if="infoSlide1" class=" center-align">
-						  <h2 style="font-family:'Oswald' !important;"class="animated flash infinite white-text">An Endless Adventure</h2>
+						  <h2 style="font-family:'Oswald' !important;"class="animated flash  white-text">An Endless Adventure</h2>
 						  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">New Challenging Locations...More Rewards To Unlock!</h5>
 						 <br> 
 						  <video width="100%" playsinline autoplay muted loop controls>
@@ -1213,7 +1205,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 							</div>
 							</div>
-						  <a href="#" ng-click="goToCharacterPage()" >
+						  <a href="#" class="white-text"ng-click="goToCharacterPage()" >
 							<i style="font-size:100px; "class="material-icons   animated flash infinite">arrow_drop_down
 							</i>
 							</a>
@@ -1246,7 +1238,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							</div>
 							</div>
 						  <a href="#" style="color:white;"ng-click="goToCharacterPage()" >
-							<i style="font-size:100px; "class="material-icons  animated flash infinite">arrow_drop_down
+							<i style="font-size:100px; color:white; "class="material-icons  animated flash infinite">arrow_drop_down
 							</i>
 							</a>
 						</div>
@@ -1257,10 +1249,16 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			  </div>
 <div class="row"></div>
 <div class="row">
+
+
 		  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
-				
-				<div class="row"><div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')">
-				
+				<div class="row"></div>
+				<div class="row">
+					<div class="row"></div>
+
+					<div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')">
+						<div class="row"></div>
+
 					 <!-- random image -->
 						<div  ng-if="characterSlide1"class=" center-align" style="border:2px solid white;">
 						  <h1 style="font-family:'Oswald'" class="animated fadeIn white-text">ZIZU</h1>
@@ -1284,7 +1282,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							
 					   <div class="col s12">
 						<a href="#"style="color:white;"style="color:white;" ng-click="goToNftpage()">
-							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons animated flash infinite">arrow_drop_down
+							<i style="font-size:100px; "class="material-icons animated flash infinite">arrow_drop_down
 							</i>
 					</a>
 					  </div>
@@ -1318,7 +1316,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 							 <div class="col s12">
 								<a href="#"style="color:white;" ng-click="goToNftPage()"  >
-									<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+									<i style="font-size:100px; "class="material-icons  animated flash infinite">arrow_drop_down
 									</i>
 									</a>
 							  </div>
@@ -1356,7 +1354,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 									</div>
 								 <div class="col s12">
 									<a href="#"style="color:white;" ng-click="goToNftPage()"  >
-										<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+										<i style="font-size:100px; "class="material-icons   animated flash infinite">arrow_drop_down
 										</i>
 										</a>
 								  </div>
@@ -1367,11 +1365,15 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				  </div>
 			  </div>
 			  </div>
+
+
 			  </div>
-			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+
+
+			  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div class="col s12" id="nft" style= "background-color:transparent;  background-image:url('./joj-01.jpg')">
-				
-							<div class="caption center-align" style="border:2px solid white;">
+				<div class="row"></div>
+							<div class=" center-align" style="border:2px solid white;">
 							  <h1 style="font-family:'Oswald'" class="animated fadeIn white-text">NFT ASSETS</h1>
 							  <div class="row">
 								  <div class="col s2"></div>
@@ -1383,7 +1385,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								
 								Your browser does not support the video tag.
 							  </video>
-							  <a href="#" ng-click="goToContactPage()" >
+							  <a href="#" class="white-text" ng-click="goToContactPage()" >
 								<i style="font-size:100px;"class="material-icons animated flash infinite">arrow_drop_down
 								</i>
 								</a>
@@ -1391,9 +1393,21 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				
 				  </div>
 			  </div>
-			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
-				<div class="col s12" id="contact" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png')">
-						<div class=" center-align" style="border:2px solid white;">
+
+
+<div class="row"></div>
+<div class="row"></div>
+
+<div class="row"></div>
+
+
+			  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png">
+<div class="row"></div>
+				<div class="row">
+				<div class="col s12" id="contact" style= "border:2px solid white;background-color:transparent; ">
+
+
+						<div class=" center-align" style=""">
 							<br>
 							<br>
 							<br>
@@ -1407,7 +1421,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<br>
 						
 							  
-							<i class="fa fa-telegram" style="font-size:40px;" aria-hidden="true"></i>
+							<i class="fa fa-telegram white-text" style="font-size:40px;" aria-hidden="true"></i>
 						</div>
 							<div class="col s4">
 								<br>
@@ -1415,14 +1429,14 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								<br>
 							
 								  
-								<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
+								<i class="fa fa-instagram white-text" style="font-size:40px;" aria-hidden="true"></i>
 							</div>
 								<div class="col s4">
 									<br>
 									<br>
 									
 							<br>
-									<i class="fa fa-twitter" style="font-size:40px;" aria-hidden="true"></i>
+									<i class="fa fa-twitter white-text" style="font-size:40px;" aria-hidden="true"></i>
 								</div>
 						 <div class="col s12">
 					<br>
@@ -1439,7 +1453,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				  </div>
 	
 			  </div>
-	
+			  </div>
 				  
 
 
