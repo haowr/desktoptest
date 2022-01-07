@@ -366,6 +366,30 @@
                     $scope.menu2 = false;
                     $scope.menu3 = false;
         }
+        $scope.goToNftPageMobile = function(){
+
+            console.log('clicked')
+            $('html, body').animate({
+                scrollTop: $("#nftmobile").offset().top
+            }, 1000); 
+                 $scope.menuOpen = false;
+            $scope.menuListClosed = true;
+                    $scope.menu1 = false;
+                    $scope.menu2 = false;
+                    $scope.menu3 = false;
+        }
+        $scope.goToInfoPageMobile = function(){
+
+            console.log('clicked')
+            $('html, body').animate({
+                scrollTop: $("#infopagemobile").offset().top
+            }, 1000); 
+                 $scope.menuOpen = false;
+            $scope.menuListClosed = true;
+                    $scope.menu1 = false;
+                    $scope.menu2 = false;
+                    $scope.menu3 = false;
+        }
         $scope.goToContactPage = function(){
  $('html, body').animate({
                 scrollTop: $("#contactpage").offset().top
@@ -377,6 +401,17 @@
                     $scope.menu3 = false;
 
         }
+        $scope.goToContactPageMobile = function(){
+            $('html, body').animate({
+                           scrollTop: $("#contactpagemobile").offset().top
+                       }, 1000); 
+                             $scope.menuOpen = false;
+                       $scope.menuListClosed = true;
+                               $scope.menu1 = false;
+                               $scope.menu2 = false;
+                               $scope.menu3 = false;
+           
+                   }
                $scope.openInfoPage = function(){
  $('html, body').animate({
                 scrollTop: $("#firstDiv").offset().top
