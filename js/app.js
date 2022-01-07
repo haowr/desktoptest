@@ -266,8 +266,7 @@
         $scope.openMenu= function(){
 
            // console.log("clickeddd")
-            //$scope.audio.play()
-            
+            $scope.audio.pause()
             if(!$scope.menuOpen){
 
                 $scope.menuOpen = true;
