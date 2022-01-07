@@ -1273,7 +1273,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 					 <!-- random image -->
 						<div  ng-if="characterSlide1"class=" center-align" style="border:2px solid white;">
-						  <h1 style="font-family:'Oswald'" class="animated fadeIn white-text">ZIZU</h1>
+						  <h1 id = "zizumobile"style="font-family:'Oswald'" class="white-text">ZIZU</h1>
 						  <div class="row">
 							<div class="col s2">
 								
@@ -1419,7 +1419,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<div class="col s12" id="nft" style= "background-color:transparent;  background-image:url('./joj-01.jpg')">
 				<div class="row"></div>
 							<div class=" center-align" style="border:2px solid white;">
-							  <h1 style="font-family:'Oswald'" class="animated fadeIn white-text">NFT ASSETS</h1>
+							  <h1 id="nftmobile" style="font-family:'Oswald'" class="animated fadeIn white-text">NFT ASSETS</h1>
 							  <div class="row">
 								<div class="col s2">
 									
@@ -1464,7 +1464,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<br>
 							<br>
 							<br>
-						  <h1 style="font-family:'Oswald'!important;" class="animated fadeIn white-text">Get In Touch!</h1>
+						  <h1 id="contactusmobile"style="font-family:'Oswald'!important;" class="  white-text">Get In Touch!</h1>
 						  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
 						
 						
@@ -1558,6 +1558,14 @@ $(window).scroll(function() {
         $("#earnwhileyouplay").removeClass("fadeInLeft");
 
     }
+	if ($(window).scrollTop() >= 760) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+        $("#zizumobile").addClass("animated fadeIn slow");
+    }else{
+        $("#zizumobile").removeClass("animated fadeIn  slow");
+
+    }
 	if ($(window).scrollTop() >= 1300) {
         //clearHeader, not clearheader - caps H
 		console.log(scroll)  
@@ -1572,12 +1580,12 @@ $(window).scroll(function() {
 	if ($(window).scrollTop() === 0) {
         //clearHeader, not clearheader - caps H
 		console.log(scroll)  
-        $("#canyou").addClass("fadeInLeft");
-		$("#metafactory").addClass("animated fadeInRight");
+      //  $("#canyou").addClass("fadeInLeft");
+		//$("#metafactory").addClass("animated fadeInRight");
 
     }else{
-        $("#canyou").removeClass("fadeInLeft");
-		$("#metafactory").removeClass("animated fadeInRight");
+       /// $("#canyou").removeClass("fadeInLeft");
+		//$("#metafactory").removeClass("animated fadeInRight");
 
 
     }
@@ -1588,6 +1596,24 @@ $(window).scroll(function() {
 		$("#endless").addClass("fadeIn slow");
     }else{
 		$("#endless").removeClass("fadeIn slow");
+
+    }
+	if ($(window).scrollTop() >= 1590) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+       
+		$("#nftmobile").addClass("fadeIn slow");
+    }else{
+		$("#nftmobile").removeClass("fadeIn slow");
+
+    }
+	if ($(window).scrollTop() >= 2280) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+       
+		$("#contactusmobile").addClass("fadeIn slow");
+    }else{
+		$("#contactusmobile").removeClass("fadeIn slow");
 
     }
 	if ($(window).scrollTop() >= 1841) {
