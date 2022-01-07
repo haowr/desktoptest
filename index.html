@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8" />
-<link rel="profile" href="https://gmpg.org/xfn/11" />
+
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 <title>Big Beans Gaming</title>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -169,10 +169,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	color:white;
 
 }
-@font-face {
-  font-family: "Oswald";
-  src: url('./Mechanismo-Regular.ttf');
-}
+
 .menu1{
 	-webkit-animation: flash linear 1s infinite;
 	animation: flash linear 1s infinite;
@@ -210,7 +207,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	<nav class=" " style=" background-color:black !important; background-image:url('./bckrndblur.jpg')">
 		<div class="nav-wrapper">
 		  <!--<a href="#" class="brand-logo left">Logo</a>-->
-		<img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" />
+		<img  itemprop="image" class="brand-logo left animated fadeIn responsive-img" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" />
   
 	 
 		<ul class="right" ng-click="openMenu()">
@@ -224,7 +221,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	<nav class=" " style=" background-color:black !important; ">
 	  <div class="">
 		  <!--<a href="#/" class="brand-logo left">Logo</a>-->
-		  <a href="#/" ng-click="goToHome()">  <img  itemprop="image" class="brand-logo left animated fadeIn img-responsive" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" /></a>
+		  <a href="#/" ng-click="goToHome()">  <img  itemprop="image" class="brand-logo left animated fadeIn responsive-img" src="./bb.png" style="width:100px; height:100px; z-index:40000;" alt="logo" /></a>
   
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 		  <li><a ng-click="goToHome()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >HOME</a></li>
@@ -1128,30 +1125,30 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 		<div class="row hide-on-med-and-up">
 		
-			<div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+			<div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div class="row">
 					
 				<div class="col s12" style="background-color:transparent;background-image:url('./bckrndblur.jpg')">
 				  
 				
 				
-					<div ng-if="homeSlide2"  class=" center-align" style="border:2px solid white;">
+					<div ng-if="homeSlide1"  class=" center-align" style="border:2px solid white;">
 					<h2 class="animated flash" style="font-family:'Oswald' !important;">Can You Escape??</h2>
 					<h3 style="font-family:'Oswald' !important;"">THE META FACTORY?</h3>
 					
 					<a class="blue-grey lighten-2 btn" target="_blank"href="https://www.youtube.com/watch?v=bwUlP_Oeq94&ab_channel=UFOGamingOfficial"><i class="material-icons left">play_arrow</i>WATCH TRAILER</a>
 
-						<!--<img class="img-responsive"  src='./untitled.png'>-->
+						<img class="responsive-img"  src='./untitled.png'>
 					</div>
 
 
-					<div ng-if="homeSlide1" class="center-align" style="border:2px solid white;">
+					<div ng-if="homeSlide2" class="center-align" style="border:2px solid white;">
 						<h2 style="font-family:'Oswald';">Join The Crew</h2>
 						<h3 style="font-family:'Oswald' ">Sign-Up Today For Access To The Beta</h3>
 						
 						<a class="blue-grey lighten-2 btn"><i class="material-icons left">face</i>Sign-Up!</a>
 	
-							<!--<img class="img-responsive"  src='./logotrans.gif'>-->
+							<img class="responsive-img"  src='./logotrans.gif'>
 						</div>
 					<br>
 					<br>
@@ -1176,7 +1173,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				</div>
 				</div>
 			  </div>
-			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+
+			  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div  class="col s12" id="infopage" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')" id="myDiv">
 				
 						<img > <!-- random image -->
@@ -1190,7 +1188,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							Your browser does not support the video tag.
 						  </video>
 						  <a href="#" ng-click="goToCharacterPage()" >
-							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+							<i style="font-size:100px; "class="material-icons   animated flash infinite">arrow_drop_down
 							</i>
 							</a>
 						  <!--<a href="#" ng-click="goToCharacterPage()" >
@@ -1198,7 +1196,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							</i>
 							</a>-->
 						</div>
-					<!--	<img class="img-responsive" src='./untitled.png'>-->
+					<!--	<img class="responsive-img" src='./untitled.png'>-->
 					 
 						<img > <!-- random image -->
 						<div  ng-if="infoSlide2"class=" center-align">
@@ -1211,7 +1209,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							Your browser does not support the video tag.
 						  </video>
 						  <a href="#" ng-click="goToCharacterPage()" >
-							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+							<i style="font-size:100px; "class="material-icons  animated flash infinite">arrow_drop_down
 							</i>
 							</a>
 						</div>
@@ -1231,20 +1229,36 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						</div>
 				  </div>
 			  </div>
-			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
-				<div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+<div class="row"></div>
+<div class="row">
+		  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+				
+				<div class="row"><div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')">
 				
 					 <!-- random image -->
 						<div  ng-if="characterSlide1"class=" center-align" style="border:2px solid white;">
 						  <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
 						  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
 						  <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald' !important; font-size:16px">( SWIPE TO SCROLL )</h5>
-					 <!--  <img class="img-responsive" style="position:absolute:top:0;" src='./zz.png'>-->
-					  
+					   <img class="responsive-img"  src='./zz.png'>
+					   <div class="row">
+						<div class="col s4 center-align">
+							<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+
+						</div>
+						<div class="col s4 center-align">
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+
+						</div>
+						<div class="col s4 center-align">
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+
+						</div>
+						</div>
 							
 					   <div class="col s12">
 						<a href="#" ng-click="goToNftpage()">
-							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons animated flash infinite">arrow_drop_down
 							</i>
 					</a>
 					  </div>
@@ -1255,13 +1269,26 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					
 	
 						<!-- random image -->
-						   <div ng-if="characterSlide2"c class=" center-align" style="border:2px solid white;">
+						   <div ng-if="characterSlide2" class=" center-align" style="border:2px solid white;">
 							 <h1 style="font-family:'Oswald'" class="animated fadeIn">RAED</h1>
 							 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
 							 <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald'; font-size:16px">( SWIPE TO SCROLL )</h5>
 	
-							<!--s <img class="img-responsive" src='./rshad.png'>-->
-							
+							 <img class="responsive-img" src='./rshad.png'>
+							 <div class="row">
+								<div class="col s4 center-align">
+									<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+		
+								</div>
+								<div class="col s4 center-align">
+									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+		
+								</div>
+								<div class="col s4 center-align">
+									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+		
+								</div>
+								</div>
 	
 							 <div class="col s12">
 								<a href="#" ng-click="goToNftPage()"  >
@@ -1280,13 +1307,27 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						
 	
 							<!-- random image -->
-							   <div ng-if="characterSlide3" class="caption center-align" style="border:2px solid white;">
-								 <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
+							   <div ng-if="characterSlide3" class=" center-align" style="border:2px solid white;">
+								 <h1 style="font-family:'Oswald'" class="animated fadeIn">STEELZ</h1>
 								 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
 								 <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald'; font-size:16px">( SWIPE TO SCROLL )</h5>
 		
-								
-								 
+								 <img class="responsive-img" src='./steel.png'>
+
+								 <div class="row">
+									<div class="col s4 center-align">
+										<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+			
+									</div>
+									<div class="col s4 center-align">
+										<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+			
+									</div>
+									<div class="col s4 center-align">
+										<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+			
+									</div>
+									</div>
 								 <div class="col s12">
 									<a href="#" ng-click="goToNftPage()"  >
 										<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
@@ -1295,22 +1336,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								  </div>
 							   </div>
 
-							   <div class="row">
-								<div class="col s4 center-align">
-									<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-		
-								</div>
-								<div class="col s4 center-align">
-									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-		
-								</div>
-								<div class="col s4 center-align">
-									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-		
-								</div>
-								</div>
+					
 					
 				  </div>
+			  </div>
+			  </div>
 			  </div>
 			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div class="col s12" id="nft" style= "background-color:transparent; border:2px solid white; background-image:url('./joj-01.jpg')">
@@ -1325,7 +1355,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								Your browser does not support the video tag.
 							  </video>
 							  <a href="#" ng-click="goToContactPage()" >
-								<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+								<i style="font-size:100px;"class="material-icons animated flash infinite">arrow_drop_down
 								</i>
 								</a>
 							</div>
@@ -1334,12 +1364,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			  </div>
 			  <div class="col s12" id="firstDiv" style= "height:600px;background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div class="col s12" id="contact" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png')">
-				-- random image -->
-						<div class="caption center-align" style="border:2px solid white;">
+						<div class=" center-align" style="border:2px solid white;">
 							<br>
 							<br>
 							<br>
-						  <h1 style="font-family:'Oswald'" class="animated fadeIn">Get In Touch!</h1>
+						  <h1 style="font-family:'Oswald'!important;" class="animated fadeIn">Get In Touch!</h1>
 						  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
 						
 						
@@ -1349,7 +1378,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<br>
 						
 							  
-							<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
+							<i class="fa fa-telegram" style="font-size:40px;" aria-hidden="true"></i>
 						</div>
 							<div class="col s4">
 								<br>
@@ -1364,7 +1393,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 									<br>
 									
 							<br>
-									<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
+									<i class="fa fa-twitter" style="font-size:40px;" aria-hidden="true"></i>
 								</div>
 						 <div class="col s12">
 					<br>
