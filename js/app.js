@@ -265,7 +265,7 @@
         }
         $scope.openMenu= function(){
 
-            console.log("clickeddd")
+           // console.log("clickeddd")
             $scope.audio.play()
             
             if(!$scope.menuOpen){
