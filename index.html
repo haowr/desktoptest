@@ -1127,13 +1127,13 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						<div class="row">
 							<div class="col s2"></div>
 							<div class="col s8">
-								<h2 class="animated flash white-text " style="font-family:'Oswald' !important;">CAN YOU ESCAPE?</h2>
+								<h2 id="canyou"class="animated  white-text " style="font-family:'Oswald' !important;">CAN YOU ESCAPE?</h2>
 
 							</div>
 
 							<div class="col s2"></div>
 							<div class="col s12">
-							<h3 class="white-text" style="font-family:'Oswald' !important;">THE META FACTORY?</h3>
+							<h3 id="metafactory" class="white-text" style="font-family:'Oswald' !important;">THE META FACTORY?</h3>
 							</div>
 
 							<div class="col s2"></div>
@@ -1185,7 +1185,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<div class="row" style="border:2px solid white;">
 						<img > <!-- random image -->
 						<div ng-if="infoSlide1" class=" center-align">
-						  <h2 style="font-family:'Oswald' !important;"class="animated flash  white-text">An Endless Adventure</h2>
+						  <h2 id="endless"style="font-family:'Oswald' !important;"class="animated   white-text">An Endless Adventure</h2>
 						  <div class="row">
 							  <div class="col s2">
 								  
@@ -1206,18 +1206,15 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						  </video>
 						  <div class="row"></div>
 						  <div class="row">
-							<div class="col s4 center-align">
-								<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+							<div class="col s6 center-align">
+								<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
-							<div class="col s4 center-align">
-								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+							<div class="col s6 center-align">
+								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
-							<div class="col s4 center-align">
-								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
-	
-							</div>
+							
 							</div>
 						  <a href="#" class="white-text"ng-click="goToCharacterPage()" >
 							<i style="font-size:100px; "class="material-icons   animated flash infinite">arrow_drop_down
@@ -1243,13 +1240,14 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						  <div class="row"></div>
 						  <div class="row">
 							<div class="col s6 center-align">
-								<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+								<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
 							<div class="col s6 center-align">
-								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
+							
 							</div>
 						  <a href="#" style="color:white;"ng-click="goToCharacterPage()" >
 							<i style="font-size:100px; color:white; "class="material-icons  animated flash infinite">arrow_drop_down
@@ -1261,14 +1259,14 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				</div>
 				  </div>
 			  </div>
-<div class="row"></div>
+
 <div class="row">
 
 
 		  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
 				<div class="row"></div>
 				<div class="row">
-					<div class="row"></div>
+					
 
 					<div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')">
 						<div class="row"></div>
@@ -1571,7 +1569,27 @@ $(window).scroll(function() {
 		$("#zizu").removeClass("fadeInLeft");
 
     }
+	if ($(window).scrollTop() === 0) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+        $("#canyou").addClass("fadeInLeft");
+		$("#metafactory").addClass("animated fadeInRight");
 
+    }else{
+        $("#canyou").removeClass("fadeInLeft");
+		$("#metafactory").removeClass("animated fadeInRight");
+
+
+    }
+	if ($(window).scrollTop() >= 90) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+       
+		$("#endless").addClass("fadeIn slow");
+    }else{
+		$("#endless").removeClass("fadeIn slow");
+
+    }
 	if ($(window).scrollTop() >= 1841) {
         //clearHeader, not clearheader - caps H
 		console.log(scroll)  
