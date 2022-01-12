@@ -200,6 +200,340 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
   min-width: 100%;
   min-height: 100%;
 }
+.ego{
+-webkit-text-size-adjust: 100%;
+    --page-title-display: none;
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    --e-global-color-primary: #9F45FF;
+    --e-global-color-secondary: #70ED9D;
+    --e-global-color-text: #333333;
+    --e-global-color-accent: #61D7FB;
+    --e-global-color-58ae69eb: #333333;
+    --e-global-color-8dab3c6: #000000;
+    --e-global-color-519ca239: #61D7FB;
+    --e-global-color-5ae9f4fa: #14C691;
+    --e-global-color-0ac9733: #4D8AF0;
+    --e-global-color-833c126: #1469EB;
+    --e-global-color-ef5c86c: #12173A;
+    --e-global-color-11bf6cf: #2B5397;
+    --e-global-typography-primary-font-family: "Poppins";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+    hyphens: manual;
+    text-align: center;
+    word-break: keep-all;
+    word-wrap: break-word;
+    font-family: "Mechanismo";
+    font-size: 1em;
+    box-sizing: border-box;
+    position: relative;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0 0 3px;
+    overflow: hidden!important;
+    background-color: #000;
+    background-image: url(../images/10-BigBeans-abstract-4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+
+.ego2{
+	-webkit-text-size-adjust: 100%;
+    --page-title-display: none;
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    --e-global-color-primary: #9F45FF;
+    --e-global-color-secondary: #70ED9D;
+    --e-global-color-text: #333333;
+    --e-global-color-accent: #61D7FB;
+    --e-global-color-58ae69eb: #333333;
+    --e-global-color-8dab3c6: #000000;
+    --e-global-color-519ca239: #61D7FB;
+    --e-global-color-5ae9f4fa: #14C691;
+    --e-global-color-0ac9733: #4D8AF0;
+    --e-global-color-833c126: #1469EB;
+    --e-global-color-ef5c86c: #12173A;
+    --e-global-color-11bf6cf: #2B5397;
+    --e-global-typography-primary-font-family: "Poppins";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+    hyphens: manual;
+    text-align: center;
+    font-family: "Mechanismo";
+    font-size: 1em;
+    word-break: keep-all;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 767px;
+}
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border:2px solid white; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: relative;
+}
+.timeline__event {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 6px;
+  align-self: center;
+  width: 50vw;
+}
+.timeline__event:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__date {
+  border-radius: 0 6px 6px 0;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__content {
+  border-radius: 6px 0 0 6px;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  right: auto;
+  z-index: -1;
+  transform: translateX(-50%);
+  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+          animation: fillTop 2s forwards 4s ease-in-out;
+}
+.timeline__event:nth-child(2n+1) .timeline__event__icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 50%;
+  left: auto;
+  transform: translateY(-50%);
+  -webkit-animation: fillLeft 2s forwards 4s ease-in-out;
+          animation: fillLeft 2s forwards 4s ease-in-out;
+}
+.timeline__event__title {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9251ac;
+  letter-spacing: 1.5px;
+}
+.timeline__event__content {
+  padding: 20px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  background: transparent;
+  font-family:'Oswald';
+  border:2px solid white;
+  width: calc(40vw - 84px);
+  border-radius: 0 6px 6px 0;
+}
+.timeline__event__date {
+  color: #f6a4ec;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: #9251ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 20px;
+  border-radius: 6px 0 0 6px;
+}
+.timeline__event__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9251ac;
+  padding: 20px;
+  align-self: center;
+  margin: 0 20px;
+  background: white;
+  border-radius: 100%;
+  width: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  padding: 40px;
+  height: 40px;
+  position: relative;
+}
+.timeline__event__icon i {
+  font-size: 32px;
+}
+.timeline__event__icon:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f6a4ec;
+  position: absolute;
+  top: 0%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: fillTop 2s forwards 4s ease-in-out;
+          animation: fillTop 2s forwards 4s ease-in-out;
+}
+.timeline__event__icon:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: 0%;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-animation: fillLeftOdd 2s forwards 4s ease-in-out;
+          animation: fillLeftOdd 2s forwards 4s ease-in-out;
+}
+.timeline__event__description {
+  flex-basis: 60%;
+}
+.timeline__event--type2:after {
+  background: #555ac0;
+}
+.timeline__event--type2 .timeline__event__date {
+  color: white;
+  background: #555ac0;
+}
+.timeline__event--type2:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type2:nth-child(2n+1) .timeline__event__icon:after {
+  background: white;
+}
+.timeline__event--type2 .timeline__event__icon {
+  background: #87bbfe;
+  color: white;
+}
+.timeline__event--type2 .timeline__event__icon:before, .timeline__event--type2 .timeline__event__icon:after {
+  background: white;
+}
+.timeline__event--type2 .timeline__event__title {
+  color: #555ac0;
+}
+.timeline__event--type3:after {
+  background: #24b47e;
+}
+.timeline__event--type3 .timeline__event__date {
+  color: #aff1b6;
+  background-color: #24b47e;
+}
+.timeline__event--type3:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type3:nth-child(2n+1) .timeline__event__icon:after {
+  background: white;
+}
+.timeline__event--type3 .timeline__event__icon {
+  background: #aff1b6;
+  color: white;
+}
+.timeline__event--type3 .timeline__event__icon:before, .timeline__event--type3 .timeline__event__icon:after {
+  background: #aff1b6;
+}
+.timeline__event--type3 .timeline__event__title {
+  color: #24b47e;
+}
+.timeline__event:last-child .timeline__event__icon:before {
+  content: none;
+}
+
+@media (max-width: 786px) {
+  .timeline__event {
+    flex-direction: column;
+    align-self: center;
+  }
+  .timeline__event__content {
+    width: 100%;
+  }
+  .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .timeline__event__icon:before, .timeline__event__icon:after {
+    display: none;
+  }
+  .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .timeline__event:nth-child(2n+1) {
+    flex-direction: column;
+    align-self: center;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+  }
+}
+@-webkit-keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+@keyframes fillLeft {
+  100% {
+    right: 100%;
+  }
+}
+@-webkit-keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+@keyframes fillTop {
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}
+@keyframes fillLeftOdd {
+  100% {
+    left: 100%;
+  }
+}
 </style>
 
 
@@ -302,10 +636,12 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		<div class='row'></div>
 	
 	<div class="row" style="border:2px solid white;">
-			<div ng-if="homeSlide1"  class="col s6 right-align">
-			
-				<img class="responsive-img" src="./untitled.png" style="height:600px; ">
-	
+			<div ng-if="homeSlide1"  class="col s6 center-align">
+				<h2 id="canyouescape" class="animated white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h2>
+
+				<img class="responsive-img animated pulse infinite" src="./untitled.png" style="height:600px; ">
+				<h2 id="canyouescape" class="animated white-text" style="font-family:'Oswald';">CAN YOU ESCAPE?</h2>
+
 			</div>
 			<div ng-if="homeSlide2" style="height:600px"  class="col s6 right-align">
 			
@@ -334,6 +670,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							<div class="col s12" style="border:2px solid white;"></div>
 							<br>
 							<h4 class="white-text animated flash "style="font-family:'Oswald';">Watch The Trailer!</h4>
+
+							<div class='embed-container'><iframe src='https://www.youtube.com/embed/cPR6_4RJSJk' frameborder='0' allowfullscreen></iframe></div>
 							<a href="https://www.youtube.com/watch?v=cPR6_4RJSJk" target="_blank"class="waves-effect waves-light red btn black-font"><i class="material-icons right">chevron_right</i>WATCH!</a>
 							<div class="row">
 							<div class="col s8">
@@ -414,7 +752,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						</div>
 					
 					</div>
-				<div class="col s1"></div>
+					<div class="col s1"></div>
 		
 					
 						  
@@ -996,6 +1334,92 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	
 				<div class="row"  style=" background-size: cover; border:2px solid white;"">
+
+					<div class="col s12 center-align">
+
+						<div class="timeline"> 
+						  <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+							<div class="timeline__event__icon animated pulse infinite ">
+								<i class="material-icons black-text">check</i>
+						
+							</div>
+							<div class="timeline__event__date white">
+							  <span style="color:black;">20-08-2019</span>
+							</div>
+							<div class="timeline__event__content ">
+							  <div class="timeline__event__title">
+								  <h1 style="font-family:'Oswald'; color:white;"> LAUNCH </h1>
+							  </div>
+							  <div class="timeline__event__description">
+								  <div class="col s12">
+								<h5 style="font-family:'Oswald'; color:white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! </h5>
+								</div>
+								<div class="col s12">
+									<h5 style="font-family:'Oswald'; color:white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! </h5>
+									</div>
+							  </div>
+							</div>
+						  </div>
+						  <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+							<div class="timeline__event__icon white">
+								<i class="material-icons black-text">map</i>						
+							</div>
+							<div class="timeline__event__date white">
+								<span style="color:black;">JANUARY 2022</span>
+							</div>
+							<div class="timeline__event__content">
+							  <div class="timeline__event__title">
+								<h1 style="font-family:'Oswald'; color:white;"> TOKEN RELEASE </h1>
+							</div>
+							  <div class="timeline__event__description">
+								<h5 style="font-family:'Oswald'; color:white;">Private & Public Sale Big Beans token released on the Binance Smart Chain</h5>
+								<h5 style="font-family:'Oswald'; color:white;">Partnership with Major advertising platforms!</h5>
+								<h5 style="font-family:'Oswald'; color:white;">Partnership with Major developer organizations!</h5>
+  
+							</div>
+							</div>
+						  </div>
+						  <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+							<div class="timeline__event__icon white">
+							  <i class="material-icons black-text">map</i>
+						
+							</div>
+							<div class="timeline__event__date white">
+								<span style="color:black;">Q1 2022</span>
+							</div>
+							<div class="timeline__event__content">
+							  <div class="timeline__event__title">
+								<h1 style="font-family:'Oswald'; color:white;"> BIG BEANS META </h1>
+							</div>
+							  <div class="timeline__event__description">
+								<h5 style="font-family:'Oswald'; color:white;">This is the expected launch period of our beta gaming platform. Here you can play with your character and explore the environment!</h5>
+							  </div>
+						
+							</div>
+						  </div>
+						  <div class="timeline__event animated fadeInUp timeline__event--type1">
+							<div class="timeline__event__icon">
+								<i class="material-icons black-text">map</i>
+						
+							</div>
+							<div class="timeline__event__date white">
+								<span style="color:black;">Q3 2022</span>
+							</div>
+							<div class="timeline__event__content">
+							  <div class="timeline__event__title">
+								<h1 style="font-family:'Oswald'; color:white;"> NFT COLLECTION </h1>
+							</div>
+							  <div class="timeline__event__description">
+								<h5 style="font-family:'Oswald'; color:white;">Release of our exclusive NFTs, players can now use their characters in the game, breed their NFTs and participate in various battles and quests</h5>
+							  </div>
+							</div>
+						  </div>
+						
+						</div>
+
+					</div>
+
+
 					<div class="col s2"></div>
 					<div class="col s8">
 						<div class="row">
@@ -1086,20 +1510,29 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						
 							  
 					</div>
+
 					</div>
 					
 				</div>
+				<div class="col s2">
+				</div>
+
+
 				
+					
+
+				
+			
 							</div>
 							
 				
 							
 								  
 			
-					<div class="col s2">
-					</div>
+					
 				
 					</div>
+				
 	
 	</div>
 				
