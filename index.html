@@ -2252,6 +2252,23 @@ $(window).scroll(function() {
 
 
     }
+	if ($(window).scrollTop() >= 5100) {
+        //clearHeader, not clearheader - caps H
+		console.log(scroll)  
+		
+        $("#getintouch").addClass("flash ");
+		$("#growingcommunity").addClass("flash ");
+
+	
+    }else{
+		//$('#roadmap').css('display','inline')
+
+		$("#growingcommunity").removeClass("flash ");
+		$("#getintouch").removeClass("flash ");
+
+
+
+    }
     if ($(window).scrollTop() <= 30) {
 		console.log(scroll)  
         //clearHeader, not clearheader - caps H
