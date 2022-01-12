@@ -388,7 +388,7 @@ $scope.goToRoadMapPageMobile = function(){
 
     console.log('clicked')
     $('html, body').animate({
-        scrollTop: $("#roadmap").offset().top
+        scrollTop: $("#roadmap-mobile").offset().top
     }, 1000); 
          $scope.menuOpen = false;
     $scope.menuListClosed = true;
