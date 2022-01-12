@@ -563,6 +563,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		  <li><a ng-click="clickTest()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >INFO</a></li>
 		  <li><a ng-click="goToFourthDiv()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >CHARACTERS</a></li>
 		  <li><a ng-click="goToNftPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >NFT</a></li>
+		  <li><a ng-click="goToRoadMapPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >ROADMAP</a></li>
+
 			<li><a ng-click="goToContactPage()"  style="font-family:'Oswald'; font-size:20px;"href="#/" >CONTACT</a></li>
 
   
@@ -593,6 +595,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToCharacterPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">CHARACTERS</h3></li>
 				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToNftPageMobile()"class="white-text"style="font-family:'Oswald'; font-size:40px;">NFT</h3></li>
+				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToRoadMapPageMobile()"class="white-text"style="font-family:'Oswald'; font-size:40px;">ROADMAP</h3></li>
+
 
 				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToContactPageMobile()"class="white-text"style="font-family:'Oswald'; font-size:40px;">CONTACT</h3></li>
 
@@ -642,9 +646,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<br>
 				<br>
 				<br>
+				<br>
+				<br>
 				<h2 id="canyouescape" class="animated white-text" style="font-family:'Oswald'; font-size:100px;">BIG BEANS</h2>
 
-				<img class="responsive-img animated pulse " src="./untitled.png" style="opacity:1;height:600px; border:2px solid white; ">
+				<img class="responsive-img animated pulse " src="./untitled.png" style="opacity:1;height:500px; width:500px; border:2px solid white; ">
 				<h2 id="canyouescape" class="animated white-text" style="font-family:'Oswald'; font-size:80px;">THE P2E REVOLUTION</h2>
 
 			</div>
@@ -968,7 +974,17 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					
 					
 		<div class="col s12">
-		
+		<div class="row"></div>
+		<div class="row"></div>
+		<div class="row"></div>
+
+		<div class="row"></div>
+		<div class="row"></div>
+		<div class="row"></div>
+
+
+		<div class="row"></div>
+
 			<div ng-if="characterSlider1">
 	
 				<h1 id="zizu" class="animated  white-text" style="font-family:'Oswald';">ZIZU</h1>
@@ -1329,7 +1345,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 			
 				
-	<div id="" style="border:5px solid transparent;" >
+	<div id="roadmap" style="border:5px solid transparent;" >
 	
 	
 	
@@ -1341,13 +1357,12 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 				<div class="row"  style=" background-size: cover; border:2px solid white;"">
 
-					<div class="col s12 center-align">
-						<h1 style="font-family:'Oswald'; color:white;"> ROADMAP </h1>
+					<div id="roadmap" class="col s12 center-align" style="display:;">
 						
 
 						<div class="timeline"> 
 						  <div id="firstitem"class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-							<div class="timeline__event__icon animated pulse infinite ">
+							<div class="timeline__event__icon animated ">
 								<i class="material-icons black-text">check</i>
 						
 							</div>
@@ -1360,10 +1375,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							  </div>
 							  <div class="timeline__event__description">
 								  <div class="col s12">
-								<h5 style="font-family:'Oswald'; color:white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! </h5>
+								<h5 style="font-family:'Oswald'; color:white;">Our website launch! Along with the release of our mobile game, where you can play for a spot on the whitelist! </h5>
 								</div>
 								<div class="col s12">
-									<h5 style="font-family:'Oswald'; color:white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! </h5>
 									</div>
 							  </div>
 							</div>
@@ -1628,11 +1642,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				
 					<div class="row">
 						<div class="col s6 center-align">
-							<a href="javascript:void(0)" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+							<a href="javascript:void(0)" style="color:white;"><i ng-click="openHomeSlider1()"class="material-icons white-text " ng-class="{'animated':!homeButton2, 'flash':!homeButton2, 'infinite':!homeButton2}" style='font-size:40px;'>crop_din</i></a>
 
 						</div>
 						<div class="col s6 center-align">
-							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openHomeSlider2()"class="material-icons white-text" ng-class="{'animated':homeButton2, 'flash':homeButton2, 'infinite':homeButton2}"style='font-size:40px;'>crop_din</i></a>
 
 						</div>
 						</div>
@@ -1724,11 +1738,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						  <div class="row"></div>
 						  <div class="row">
 							<div class="col s6 center-align">
-								<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+								<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()" ng-class="{'animated':!infoButton2, 'flash':!infoButton2, 'infinite':!infoButton2}"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
 							<div class="col s6 center-align">
-								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()" ng-class="{'animated':infoButton2, 'flash':infoButton2, 'infinite':infoButton2}"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
 							
@@ -1948,7 +1962,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 						<div class="timeline"> 
 						  <div id="firstitem"class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-							<div class="timeline__event__icon animated pulse infinite ">
+							<div class="timeline__event__icon  ">
 								<i class="material-icons black-text">check</i>
 						
 							</div>
@@ -1957,7 +1971,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							</div>
 							<div class="timeline__event__content ">
 							  <div class="timeline__event__title">
-								  <h1 style="font-family:'Oswald'; color:white;"> LAUNCH </h1>
+								  <h2 style="font-family:'Oswald'; color:white;"> LAUNCH </h2>
 							  </div>
 							  <div class="timeline__event__description">
 								  <div class="col s12">
@@ -1980,7 +1994,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							</div>
 							<div class="timeline__event__content">
 							  <div class="timeline__event__title">
-								<h1 style="font-family:'Oswald'; color:white;"> TOKEN RELEASE </h1>
+								<h2 style="font-family:'Oswald'; color:white;"> TOKEN LAUNCH </h2>
 							</div>
 							  <div class="timeline__event__description">
 								<h5 style="font-family:'Oswald'; color:white;">Private & Public Sale Big Beans token released on the Binance Smart Chain</h5>
@@ -2000,7 +2014,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							</div>
 							<div class="timeline__event__content">
 							  <div class="timeline__event__title">
-								<h1 style="font-family:'Oswald'; color:white;"> BIG BEANS META </h1>
+								<h2 style="font-family:'Oswald'; color:white;"> BIG BEANS META </h2>
 							</div>
 							  <div class="timeline__event__description">
 								<h5 style="font-family:'Oswald'; color:white;">This is the expected launch period of our beta gaming platform. Here you can play with your character and explore the environment!</h5>
@@ -2018,7 +2032,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							</div>
 							<div class="timeline__event__content">
 							  <div class="timeline__event__title">
-								<h1 style="font-family:'Oswald'; color:white;"> NFT COLLECTION </h1>
+								<h2 style="font-family:'Oswald'; color:white;"> NFTS! </h2>
 							</div>
 							  <div class="timeline__event__description">
 								<h5 style="font-family:'Oswald'; color:white;">Release of our exclusive NFTs, players can now use their characters in the game, breed their NFTs and participate in various battles and quests</h5>
@@ -2196,14 +2210,21 @@ $(window).scroll(function() {
 		$("#own").removeClass("fadeInRight");
 
     }
+	if($(window).scrollTop() >= 3000){
+
+		//$('#roadmap').css('display','inline')
+	}
 	if ($(window).scrollTop() === 3075) {
         //clearHeader, not clearheader - caps H
 		console.log(scroll)  
+		
         $("#getintouch").addClass("flash ");
 		$("#growingcommunity").addClass("flash ");
 
 	
     }else{
+		//$('#roadmap').css('display','inline')
+
 		$("#growingcommunity").removeClass("flash ");
 		$("#getintouch").removeClass("flash ");
 

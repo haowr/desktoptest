@@ -38,17 +38,25 @@
         $scope.audioOffIcon            = true;
         $scope.infoSlide1       = true;
         $scope.infoSlide2   = false;
+        $scope.homeButton2 = false;
+        $scope.infoButton2 = false;
+        $scope.characterButton1 = true;
+        $scope.characterButton2 = false;
+        $scope.characterButton3 = false;
+       
 
         $scope.openInfoSlide1 = function(){
 
             $scope.infoSlide2 = false;;
             $scope.infoSlide1 = true
+            $scope.infoButton2  = false;
 
         }
         $scope.openInfoSlide2 = function(){
 
             $scope.infoSlide1 = false;;
             $scope.infoSlide2 = true
+            $scope.infoButton2 = true;
 
         }
         $scope.openCharacterSlide1 = function(){
@@ -56,23 +64,29 @@
             $scope.characterSlide1 = true;
             $scope.characterSlide2 = false;
             $scope.characterSlide3 = false;
-
+            $scope.characterButton1 = true;
+            $scope.characterButton2= false;
+            $scope.characterButton3= false;
 
         }
-        $scope.characterSlide1 = true;
-        $scope.characterSlide2 = false;
-        $scope.characterSlide3 = false;
+  
         $scope.openCharacterSlide3 = function(){
 
             $scope.characterSlide3 = true;
             $scope.characterSlide1 = false;
             $scope.characterSlide2 = false;
+            $scope.characterButton3 = true;
+            $scope.characterButton1= false;
+            $scope.characterButton2= false;
             
 
         }        
         $scope.openCharacterSlide2= function(){
 
             $scope.characterSlide2 = true;
+            $scope.characterButton2 = true;
+            $scope.characterButton1= false;
+            $scope.characterButton3= false;
             $scope.characterSlide1 = false;
             $scope.characterSlide3 = false;
             
@@ -180,6 +194,7 @@
                 $scope.homeSlide1 = true;
                 $scope.homeSlide2 = false;
                 $scope.homeSlide3 = false;
+                $scope.homeButton2 = false;
             }
 
         }
@@ -190,6 +205,8 @@
                 $scope.homeSlide2 = true;
                 $scope.homeSlide1 = false;
                 $scope.homeSlide3 = false;
+                $scope.homeButton2 = true;
+
             }
 
         }
@@ -353,6 +370,30 @@
                $scope.menu3 = false;
 
    }
+   $scope.goToRoadMapPage = function(){
+
+    console.log('clicked roadmap')
+    $('html, body').animate({
+        scrollTop: $("#roadmap").offset().top
+    }, 1000); 
+         $scope.menuOpen = false;
+    $scope.menuListClosed = true;
+            $scope.menu1 = false;
+            $scope.menu2 = false;
+            $scope.menu3 = false;
+}
+$scope.goToRoadMapPageMobile = function(){
+
+    console.log('clicked')
+    $('html, body').animate({
+        scrollTop: $("#roadmap").offset().top
+    }, 1000); 
+         $scope.menuOpen = false;
+    $scope.menuListClosed = true;
+            $scope.menu1 = false;
+            $scope.menu2 = false;
+            $scope.menu3 = false;
+}
         $scope.goToNftPage = function(){
 
             console.log('clicked')
