@@ -69,7 +69,9 @@
             $scope.characterButton3= false;
 
         }
-  
+        $scope.characterSlide1 = true;
+        $scope.characterSlide2 = false;
+        $scope.characterSlide3 = false;
         $scope.openCharacterSlide3 = function(){
 
             $scope.characterSlide3 = true;

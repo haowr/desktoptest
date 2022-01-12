@@ -1350,7 +1350,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	
 	
 	
-			<div id="contactpage" style="background-image:url('./earnbackground.jpg'); background-size:cover;
+			<div  style="background-image:url('./earnbackground.jpg'); background-size:cover;
 			background-position:center;" >
 	
 	
@@ -1452,7 +1452,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							
 				
 				
-				<div class="col s12">
+				<div id="contactpage" class="col s12">
 				
 					<div ng-if="homeSlide1o">
 			
@@ -1660,8 +1660,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				</div>
 			  </div>
 
-			  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
-				<div  class="col s12" id="infopagemobile" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')" id="myDiv">
+			  <div class="col s12" id="firstDiv" style="background-image:url('./earnbackground.jpg');background-position:center;border:5px solid transparent;">
+				<div  class="col s12" id="infopagemobile"  id="myDiv">
 				<div class="row"></div>
 					<div class="row" style="border:2px solid white;">
 						<img > <!-- random image -->
@@ -1678,8 +1678,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 								  
 							</div>
 						  </div>
-						  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">New Challenging Locations...More Rewards To Unlock!</h5>
-						 <br> 
+						  <p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans is a gaming token focused on integrating the blockchain with gaming, introducing an innovative way to earn while playing. The Beans Meta will be the virtual world where the Beans ecosystem will exist; it will have virtual land, NFTs, P2E, gaming and cartoons.</p>
+													 <br> 
 						 <div class="row">
 							 <div class="col s1"></div>
 							 <div class="col s10">
@@ -1697,13 +1697,14 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						  <div class="row"></div>
 						  <div class="row">
 							<div class="col s6 center-align">
-								<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+								<a href="javascript:void(0)" style="color:white;"><i ng-click="openInfoSlide1()" ng-class="{'animated':!infoButton2, 'flash':!infoButton2, 'infinite':!infoButton2}"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
 							<div class="col s6 center-align">
-								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+								<a href="javascript:void(0)" style="color:white;">	<i ng-click="openInfoSlide2()" ng-class="{'animated':infoButton2, 'flash':infoButton2, 'infinite':infoButton2}"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
 	
 							</div>
+							
 							
 							</div>
 						  <a href="#" class="white-text"ng-click="goToCharacterPage()" >
@@ -1720,7 +1721,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						<img > <!-- random image -->
 						<div  ng-if="infoSlide2"class=" center-align">
 						  <h2 style="font-family:'Oswald' !important;" class="animated fadeIn white-text">EARN WHILE YOU PLAY</h2>
-						  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald' !important;">Make Money Doing What You love! What More Can You Ask For?</h5>
+						  <p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Big Beans will be one of the first NFT driven P2E gaming platforms on the Binance Smart Chain. Big Beans is a multiplayer role-playing game centred around the Beans NFT collection. In the game, players farm, compete and breed with one another to earn $BEANS tokens.</p>
 						 <br> 
 						 <div class="row">
 							<div class="col s1"></div>
@@ -1761,12 +1762,13 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 <div class="row">
 
 
-		  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.jpg')">
+		  <div class="col s12" id="firstDiv" style="background-image:url('characterbackground.jpg');background-repeat:no-repeat;background-size:cover;
+		  background-position:center; ">
 				<div class="row"></div>
 				<div class="row">
 					
 
-					<div class="col s12" id="characters" style= "background-color:transparent; background-image:url('./bckrndblur.jpg')">
+					<div class="col s12" id="characters" >
 						<div class="row"></div>
 
 					 <!-- random image -->
@@ -1789,15 +1791,15 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					   <img class="responsive-img"  src='./12.gif'>
 					   <div class="row">
 						<div class="col s4 center-align">
-							<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+							<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" ng-class="{'animated':characterButton1,'flash':characterButton1, 'infinite':characterButton1}" style='font-size:40px;'>crop_din</i></a>
 
 						</div>
 						<div class="col s4 center-align">
-							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text"ng-class="{'animated':characterButton2,'flash':characterButton2, 'infinite':characterButton2}" style='font-size:40px;'>crop_din</i></a>
 
 						</div>
 						<div class="col s4 center-align">
-							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+							<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text"ng-class="{'animated':characterButton3,'flash':characterButton3, 'infinite':characterButton3}" style='font-size:40px;'>crop_din</i></a>
 
 						</div>
 						</div>
@@ -1834,15 +1836,15 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							 <img class="responsive-img" src='./11.gif'>
 							 <div class="row">
 								<div class="col s4 center-align">
-									<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+									<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" ng-class="{'animated':characterButton1,'flash':characterButton1, 'infinite':characterButton1}" style='font-size:40px;'>crop_din</i></a>
 		
 								</div>
 								<div class="col s4 center-align">
-									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text"ng-class="{'animated':characterButton2,'flash':characterButton2, 'infinite':characterButton2}" style='font-size:40px;'>crop_din</i></a>
 		
 								</div>
 								<div class="col s4 center-align">
-									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+									<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text"ng-class="{'animated':characterButton3,'flash':characterButton3, 'infinite':characterButton3}" style='font-size:40px;'>crop_din</i></a>
 		
 								</div>
 								</div>
@@ -1884,15 +1886,15 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 								 <div class="row">
 									<div class="col s4 center-align">
-										<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+										<a href="javascript:void(0)" style="color:white;"><i ng-click="openCharacterSlide1()"class="material-icons white-text" ng-class="{'animated':characterButton1,'flash':characterButton1, 'infinite':characterButton1}" style='font-size:40px;'>crop_din</i></a>
 			
 									</div>
 									<div class="col s4 center-align">
-										<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+										<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide2()"class="material-icons white-text"ng-class="{'animated':characterButton2,'flash':characterButton2, 'infinite':characterButton2}" style='font-size:40px;'>crop_din</i></a>
 			
 									</div>
 									<div class="col s4 center-align">
-										<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text" style='font-size:40px;'>crop_din</i></a>
+										<a href="javascript:void(0)" style="color:white;">	<i ng-click="openCharacterSlide3()"class="material-icons white-text"ng-class="{'animated':characterButton3,'flash':characterButton3, 'infinite':characterButton3}" style='font-size:40px;'>crop_din</i></a>
 			
 									</div>
 									</div>
@@ -1930,7 +1932,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 									
 							  </div>
 							</div>
-							  <p style="font-family:'Oswald'; font-size:20px;" class="light grey-text text-lighten-3">Using our NFTs exclusively, players engage in adventurous games and compete against each other while earning tokens. Users can purchase virtual land in our Meta world and get the chance to watch cartoons in an augmented landscape.</p>
+							<p class="white-text animated fadeIn" style="font-size:20px; font-family:'Oswald'">Using our NFTs exclusively, players engage in adventurous games and compete against each other while earning tokens. Users can purchase virtual land in our Meta world and get the chance to watch cartoons in an augmented landscape.</p>
 							 <br>
 							  <video width="100%" playsinline autoplay muted loop controls>
 								<source src="./56.mp4" type="video/mp4">
@@ -1952,9 +1954,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 <div class="row"></div>
 
-
-			  <div class="col s12" id="firstDiv" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png">
+			  <div class="col s12" id="firstDiv" style="background-image:url('./earnbackground.jpg'); background-size:cover;
+			  background-position:center;">
 <div class="row"></div>
+
+
 				<div class="row">
 				<div class="col s12" id="contactpagemobile" style= "border:2px solid white;background-color:transparent; ">
 
@@ -2043,14 +2047,29 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						</div>
 
 					</div>
+					<div class="row">
+
+					</div>
+					<div class="row">
+						
+					</div>
+					<div class="row">
+						
+					</div>
 						<div class=" center-align" style=""">
 							<br>
 							<br>
 							<br>
 						  <h1 id="contactusmobile"style="font-family:'Oswald'!important;" class="  white-text">Get In Touch!</h1>
-						  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
+						  <div class="row">
+						  <div class="col s3"></div>
+						  <div class="col s6 " style="border:2px solid white;"></div>
+						  <div class="col s3"></div>
+						</div>
+						  <h5 class="white-text animated fadeIn" style=" font-family:'Oswald'">The Meta Factory?</h5>
 						
-						
+						  <h5 class="white-text animated fadeIn" style=" font-family:'Oswald'">Our moderators are on tap 24/7 to answer your questions, and help you as you get acclimated to the world of beans meta! Check us out on Twitter, Telegram, or Instagram, and get lost in the new crypto-verse! </h5>
+
 						  <div class="col s4">
 							<br>
 							<br>
